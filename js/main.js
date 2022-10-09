@@ -66,18 +66,6 @@ if($(window).width() <= 767){
 	    margin: 0,
 	    items: 1,
 	    nav: true
-	    // ,
-	    // responsive:{
-	    //     0:{
-	    //         items:1
-	    //     },
-	    //     768:{
-	    //         items:1
-	    //     },
-	    //     1000:{
-	    //         items:2
-	    //     }
-	    // }
 	});
 }
 
@@ -176,66 +164,4 @@ function lookForElement(Selector){
 }
 
 lookForElement('#why-counters');
-
-
-
-
-
-
-// scroll numbers
-/*
-var clockScroller=Scroller.getNewInstance({
-	width:200,
-	amount:40,
-	interval:200,
-	// separatorType:Scroller.SEPARATOR.NONE,
-	// separator:":"
-});
-clockScroller.appendTo(document.getElementById("clock-pane"));
-
-clockScroller.start("0");
-
-var val1 = 0;
-var finish = 5;
-
-var setInterval111 = setInterval(function(){
-	if(val1 === finish) clearInterval(setInterval111);
-	
-	clockScroller.scrollTo(val1);
-	val1++;
-
-},1000);
-*/
-
-
-// function counter(params){
-// 	const {valStart, valFinish, appendTo, speedMS} = params;
-// 	// console.log(valStart, valFinish, appendToID);
-
-// 	const clockScroller = Scroller.getNewInstance({
-// 		width: 200,
-// 		amount: 40,
-// 		interval: 200
-// 	});
-// 	clockScroller.appendTo(document.querySelector(appendTo));
-// 	clockScroller.start(valStart);
-
-// 	let currentVal = valStart;
-
-// 	const currentIdInterval = setInterval(function(){
-// 		if(currentVal === valFinish) clearInterval(currentIdInterval);
-// 		strVal = (currentVal >= 10) ? currentVal % 10 : currentVal; 
-// 		clockScroller.scrollTo(strVal);
-// 		currentVal++;
-
-// 	},speedMS);
-// }
-
-
-
-
-// lookForElement({valStart: 1, valFinish: 2, appendTo: '#clock-pane-hun', speedMS: 1000});
-// lookForElement({valStart: 5, valFinish: 8, appendTo: '#clock-pane-dec', speedMS: 5000});
-// lookForElement({valStart: 2, valFinish: 10, appendTo: '#clock-pane-num', speedMS: 200});
-
 
