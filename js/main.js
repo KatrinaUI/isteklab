@@ -5,6 +5,7 @@ function addPadddingBlock(){
 window.addEventListener('resize', addPadddingBlock);
 addPadddingBlock();
 
+
 // appear elements
 (function($) {
   $.fn.fadeInDelay = function() {
@@ -15,7 +16,7 @@ addPadddingBlock();
   };
 }(jQuery));
 
-var windowHeight2 = $(window).height()/2;
+var windowHeight2 = $(window).height()/2 + 200;
 var docsTop = $(".page-content__documents-types").offset().top;
 var whyTop = $(".page-content__why").offset().top;
 
@@ -24,6 +25,7 @@ $(window).scroll(function() {
 
          if (!$('.documents-types__items').hasClass('active')) {
             $('.documents-types__items').addClass('active');
+            $('.documents-types__line').addClass('show');
             $('.documents-types__item').children('.documents-types__content').fadeInDelay();
          }
     }
@@ -63,11 +65,12 @@ if($(window).width() <= 767){
 	$('.tests__cards').owlCarousel({
 	    rtl: false,
 	    loop: true,
-	    margin: 0,
+	    margin: 20,
 	    items: 1,
 	    nav: true
 	});
 }
+
 
 // circle progress bar
 var bar = new ProgressBar.Circle(progress, {
@@ -75,7 +78,7 @@ var bar = new ProgressBar.Circle(progress, {
   strokeWidth: 10,
   trailWidth: 0,
   easing: 'easeInOut',
-  duration: 2500,
+  duration: 1900,
   text: {
     autoStyleContainer: false
   },
@@ -91,9 +94,6 @@ var bar = new ProgressBar.Circle(progress, {
     } 
   }
 });
-
-
-
 
 
 // validation
