@@ -165,3 +165,10 @@ function lookForElement(Selector){
 
 lookForElement('#why-counters');
 
+$('.licenses__photo').on('click', function(){
+  const imgLg = $(this).find('img').attr('data-lg');
+  // console.log(imgLg);
+  $('.license__modal .license__img img').attr('src','');
+  $('.license__modal .license__img img').attr('src',imgLg);
+});
+

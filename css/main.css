@@ -73,6 +73,7 @@ a:hover{
 .modal-backdrop{
 	background: rgba(95, 113, 135, 0.6);
 	backdrop-filter: blur(4px);
+	opacity: 1!important;
 }
 
 section h2{
@@ -450,6 +451,7 @@ header .btn-call{
 .card-price span.card-price_cur{
 	margin-left: 5px;
 	font-family: 'Opensans_Bold';
+	font-weight: bold;
 }
 
 .card-link{
@@ -900,6 +902,45 @@ header .btn-call{
     background: #68CCF3;
     position: absolute;
     left: 12px;
+}
+
+/* licenses */
+
+.license__modal .modal-body{
+	padding: 0;
+	background-color: inherit;
+	width: fit-content;
+}
+
+.license__modal .modal-header{
+    border: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.license__modal .modal-header button{
+    position: absolute;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    right: 40px;
+    top: 40px;
+    border: 0;
+    background: url(../images/close-white.svg) top center no-repeat;
+    background-size: contain;
+    opacity: 1;
+}
+
+.license__modal .modal-header button:focus{
+	box-shadow: none;
+}
+
+.license__modal .modal-content{
+    border: 0;
+    border-radius: 0;
+    width: fit-content;
+    margin: auto;
 }
 
 /* page-content__control */
