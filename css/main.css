@@ -4697,6 +4697,7 @@ footer{
 
 	.page-content__banner__text p {
 		max-width: 320px;
+		max-width: 295px;
 		min-height: 88px;
 	}
 }
