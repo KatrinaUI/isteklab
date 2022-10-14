@@ -908,8 +908,12 @@ header .btn-call{
 
 .license__modal .modal-body{
 	padding: 0;
-	background-color: inherit;
-	width: fit-content;
+    background-color: inherit;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .license__modal .modal-header{
@@ -936,11 +940,31 @@ header .btn-call{
 	box-shadow: none;
 }
 
-.license__modal .modal-content{
-    border: 0;
-    border-radius: 0;
-    width: fit-content;
+.license__modal .modal-dialog{
+	max-width: 856px;
+	margin: auto;
+	height: 100vh;
+}
+
+.license__img{
+	position: absolute;
+    width: 100vh;
+    height: fit-content;
+    max-height: calc(100% - 120px);
+    top: 0;
+    bottom: 0;
     margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.license__modal .modal-content{
+	border: 0;
+    border-radius: 0;
+    margin: auto;
+    height: 100%;
+    background: inherit;
+    margin: 0;
 }
 
 /* page-content__control */
@@ -3511,6 +3535,19 @@ footer{
 }
 
 @media (max-width: 768px){
+
+	.license__modal .modal-body{
+		max-width: calc(100% - 64px);
+	}
+
+	.license__img{
+		width: 100%;
+	}
+
+	.license__modal .modal-header,
+	.license__modal .modal-header button{
+		z-index: 1000;
+	}
 
 	.page-content__banner{
 	    background-position-x: -389px;
