@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ИСТЭК-ЛАБ</title>
+    <!-- <link href="css/owl.carousel.min.css" rel="stylesheet"> -->
+	<!-- <link href="css/owl.theme.default.min.css" rel="stylesheet"> -->
+	<!-- <link href="css/cards-new.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="css/scroller.css" rel="stylesheet"> -->
+    <link href="css/main.css" rel="stylesheet"> <!-- main css file -->
+    <link href="css/accreditation_scope.css" rel="stylesheet"> 
+  </head>
+  <body>
+
+	<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">  	
+
+		<nav class="top-panel">
+		    <div class="top-panel__wrap d-flex flex-wrap">
+		      <ul class="nav me-auto">
+		      	<li class="nav-item"><span class="panel__location">Москва</li>
+		      </ul>
+		      <ul class="panel__contacts nav">
+		        <li class="panel__contacts-item">пн-пт с 8:30 до 17:00</li>
+		        <li class="panel__contacts-item"><a href="callto:+7 (495) 128-88-21">+7 (495) 128-88-21</a></li>
+		        <li class="panel__contacts-item">info@istek-lab.ru</li>
+		      </ul>
+		    </div>
+		</nav>
+
+		<nav class="main-menu flex-wrap">
+			<div class="main-menu__wrap d-flex flex-wrap">
+
+		      	<a href="/" class="l-logo d-flex text-decoration-none">
+					<span class="logo-img"></span>
+					<span class="logo-text">
+						ИСТЭК-ЛАБ
+						<small>Испытательный лабораторный центр</small>
+					</span> 
+				</a>
+
+			    <div class="header__menu offcanvas-lg offcanvas-end" tabindex="-1" id="bdNavbar">
+					<div class="offcanvas-body">
+				        <ul class="header__menu__links navbar-nav flex-row flex-wrap bd-navbar-nav" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+				          	<li class="active-item"><a href="#" class="nav-link">Главная</a></li>
+							<li><a href="#" class="nav-link">Область аккредитации</a></li>
+							<li><a href="#" class="nav-link">Испытания продукции</a></li>
+							<li><a href="#" class="nav-link">О нас</a></li>
+							<li><a href="#" class="nav-link">Цены</a></li>
+							<li><a href="#" class="nav-link">Новости</a></li>
+							<li><a href="#" class="nav-link">Контакты</a></li>
+				        </ul>
+				        <div class="contacts-mobile d-lg-none">
+				        	<p class="contacts-mobile__phone"><a href="callto:+7 (495) 128-88-21">+7 (495) 128-88-21</a></p>
+				        	<p class="contacts-mobile__time">пн-пт с 8:30 до 17:00</p>
+				        	<p class="contacts-mobile__mail">info@istek-lab.ru</p>
+				        </div>
+			      	</div>
+			    </div>
+			
+			    <div class="btn-block">
+				    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+				        <span class="toogler__btn"></span>
+				    </button>
+					<button type="button" class="btn-call btn-primary" data-bs-toggle="modal" data-bs-target="#callModal"><span>Заказать звонок</span></button>
+					<!-- mobile close-filter btn -->
+					<button type="button" class="categories__popup__close" data-bs-dismiss="offcanvas" data-bs-target="#catFilter" aria-controls="catFilter" aria-label="Close"></button>
+				</div>
+
+			</div>
+		  </nav>
+
+    </header>
+
+    <main class="page-content">
+
+    	<section class="page-content__banner top-baner">
+    		<div class="row">
+		      	<div class="page-content__banner__text col-12">
+			        <h2>
+			        	<span>ИЛЦ «ИСТЭК-ЛАБ» аккредитован Федеральной Службой по Аккредитации и внесен в национальную часть</span>
+			        	<a href="https://pub.fsa.gov.ru/ral/view/34226/current-aa" target="_blank">единого реестра</a>
+			        </h2>
+			        <a href="#" class="card-link licenses__photo" data-bs-toggle="modal" data-bs-target="#exampleModalLisence" data-lg="images/licenses/license-1-lg.jpg">Смотреть документ</a>
+		       	</div>
+	        </div>
+		</section>
+
+		<section class="page-content__breadcrumbs">
+			<div class="row">
+				<div class="col">
+					<ul>
+						<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+						<li class="breadcrumbs__item"><span>Область аккредитации</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-content__main container-fluid">
+			<div class="row">
+				<div class="section-title col-12">
+					<h1>Область аккредитации</h1>
+				</div>
+				<div class="main-contentainer col-12">
+
+					<div class="main-contentainer__sidebar">
+
+							<!-- categories tabs -->
+							<ul class="product-categories nav nav-tabs" id="tabsCategories" role="tablist">
+							  <li class="product-categories__item all-categories" role="presentation">
+							    <button class="active" id="all-categories-tab" data-bs-toggle="tab" data-bs-target="#all-categories" type="button" role="tab" aria-controls="all-categories" aria-selected="true">Вся продукция</button>
+							  </li>
+							  <li class="product-categories__item perfumery" role="presentation">
+							    <button id="perfumery-tab" data-bs-toggle="tab" data-bs-target="#perfumery" type="button" role="tab" aria-controls="perfumery" aria-selected="false">Парфюмерия</button>
+							  </li>
+							  <li class="product-categories__item cosmetics active-item" role="presentation">
+							    <button id="cosmetics-tab" data-bs-toggle="tab" data-bs-target="#cosmetics" type="button" role="tab" aria-controls="cosmetics" aria-selected="false">Косметика</button>
+							  </li>
+							  <li class="product-categories__item oral-hygiene" role="presentation">
+							    <button id="oral-hygiene-tab" data-bs-toggle="tab" data-bs-target="#oral-hygiene" type="button" role="tab" aria-controls="oral-hygiene" aria-selected="false">Средства гигиены полости рта</button>
+							  </li>
+							  <li class="product-categories__item laundry-hygiene" role="presentation">
+							    <button id="laundry-hygiene-tab" data-bs-toggle="tab" data-bs-target="#laundry-hygiene" type="button" role="tab" aria-controls="laundry-hygiene" aria-selected="false">Средства для стирки</button>
+							  </li>
+							  <li class="product-categories__item household-chemicals" role="presentation">
+							    <button id="household-chemicals-tab" data-bs-toggle="tab" data-bs-target="#household-chemicals" type="button" role="tab" aria-controls="household-chemicals" aria-selected="false">Товары бытовой химиии</button>
+							  </li>
+							  <li class="product-categories__item essential-oils" role="presentation">
+							    <button id="essential-oils-tab" data-bs-toggle="tab" data-bs-target="#essential-oils" type="button" role="tab" aria-controls="essential-oils" aria-selected="false">Масла эфирные</button>
+							  </li>
+							  <li class="product-categories__item dsiz" role="presentation">
+							    <button id="dsiz-tab" data-bs-toggle="tab" data-bs-target="#dsiz" type="button" role="tab" aria-controls="dsiz" aria-selected="false">ДСИЗ</button>
+							  </li>
+							  <li class="product-categories__item flushes" role="presentation">
+							    <button id="flushes-tab" data-bs-toggle="tab" data-bs-target="#flushes" type="button" role="tab" aria-controls="flushes" aria-selected="false">Смывы</button>
+							  </li>
+							</ul>
+
+							<div class="product-categories__btn__mobile">
+								<span>Выбрать категорию:</span>
+								<button id="catFilterBtn" class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#catFilter" aria-controls="catFilter" aria-label="Toggle navigation">
+				        		Вся продукция</button>
+							</div>
+
+							<div class="product-categories__popup__mobile offcanvas-lg offcanvas-start offcanvas" tabindex="-1" id="catFilter">
+								
+								<div class="offcanvas-body">
+									<div class="categories__popup__close">
+										<button type="button" class="categories__popup__close" data-bs-dismiss="offcanvas" data-bs-target="#catFilter" aria-controls="catFilter" aria-label="Close"></button>
+									</div>
+									
+									<ul class="product-categories nav nav-tabs" id="tabsCategories" role="tablist">
+									  <li class="product-categories__item all-categories" role="presentation" data-bs-dismiss="offcanvas">
+									    <button class="active" id="all-categories-tab" data-bs-toggle="tab" data-bs-target="#all-categories" type="button" role="tab" aria-controls="all-categories" aria-selected="true">Вся продукция</button>
+									  </li>
+									  <li class="product-categories__item perfumery" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="perfumery-tab" data-bs-toggle="tab" data-bs-target="#perfumery" type="button" role="tab" aria-controls="perfumery" aria-selected="false">Парфюмерия</button>
+									  </li>
+									  <li class="product-categories__item cosmetics active-item" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="cosmetics-tab" data-bs-toggle="tab" data-bs-target="#cosmetics" type="button" role="tab" aria-controls="cosmetics" aria-selected="false">Косметика</button>
+									  </li>
+									  <li class="product-categories__item oral-hygiene" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="oral-hygiene-tab" data-bs-toggle="tab" data-bs-target="#oral-hygiene" type="button" role="tab" aria-controls="oral-hygiene" aria-selected="false">Средства гигиены полости рта</button>
+									  </li>
+									  <li class="product-categories__item laundry-hygiene" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="laundry-hygiene-tab" data-bs-toggle="tab" data-bs-target="#laundry-hygiene" type="button" role="tab" aria-controls="laundry-hygiene" aria-selected="false">Средства для стирки</button>
+									  </li>
+									  <li class="product-categories__item household-chemicals" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="household-chemicals-tab" data-bs-toggle="tab" data-bs-target="#household-chemicals" type="button" role="tab" aria-controls="household-chemicals" aria-selected="false">Товары бытовой химиии</button>
+									  </li>
+									  <li class="product-categories__item essential-oils" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="essential-oils-tab" data-bs-toggle="tab" data-bs-target="#essential-oils" type="button" role="tab" aria-controls="essential-oils" aria-selected="false">Масла эфирные</button>
+									  </li>
+									  <li class="product-categories__item dsiz" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="dsiz-tab" data-bs-toggle="tab" data-bs-target="#dsiz" type="button" role="tab" aria-controls="dsiz" aria-selected="false">ДСИЗ</button>
+									  </li>
+									  <li class="product-categories__item flushes" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="flushes-tab" data-bs-toggle="tab" data-bs-target="#flushes" type="button" role="tab" aria-controls="flushes" aria-selected="false">Смывы</button>
+									  </li>
+									</ul>
+						      	</div>
+						    </div>
+
+					</div>
+					<div class="main-contentainer__content">
+						<div class="content__tabs" id="categoriesContent">
+
+							<!-- categories content -->
+							<div class="tab-content">
+							  	<div class="tab-pane active" id="all-categories" role="tabpanel" aria-labelledby="all-categories-tab" tabindex="0">
+							  		<h2 class="category__title">Парфюмерия</h2>
+									<div class="category__text">
+										<p>Изделия парфюмерные жидкие (духи, одеколоны, парфюмерные, туалетные и душистые воды и т.п.)</p>
+										<p>Парфюмерная и косметическая спиртосодержащая продукция</p>
+										<p>Продукция парфюмерная твердая</p>
+										<p>Продукция парфюмерная сухая</p>
+									</div>	
+							  		<h2 class="category__title">Косметика</h2>
+									<div class="category__text">
+										<p>Продукция косметическая на носителях</p>
+										<p>Продукция косметическая для бритья</p>
+										<p>Продукция косметическая для ухода за ногтями, для ухода и удаления кутикулы; Продукция косметическая для моделирования и полирования ногтей; Средства для маникюра и ухода за ногтями (лаки, базы и основы под лак и т.п.); Жидкости для снятия лака и растворители</p>
+										<p>Продукция декоративной косметики на эмульсионной основе - тональные средства (тональные кремы, базы, основы), румяна, тени для век, блеск для губ, лица и тела, тушь для волос, жидкие тушь для ресниц и подводка для глаз и другая аналогичная по назначению продукция</p>
+										<p>Продукция декоративной косметики на жировой основе, на жировосковой основе - губные помады (в том числе гигиенические и жидкие), блеск и бальзам для губ, тени для век, маскирующие карандаши, румяна, пудра, театральный грим, контурные карандаши для бровей, век и губ, твердая тушь для ресниц и другая аналогичная по назначению продукция</p>
+										<p>Жиросодержащие средства (лосьоны, косметические эмульсии, косметическое молочко и пр.);</p>
+										<p>Косметические гели водные и безводные, предназначенные для ухода за кожей, ресницами, бровями, волосами (в том числе для их укладки) и для макияжа</p>
+										<p>Кремы косметические для ухода за кожей лица, тела, волосами, ногтями, губами, кожей вокруг глаз; <br>Молочко, сливки, сметанка, эмульсии, маски, пилинги, скрабы, эксфолианты, кремы на гелевой основе и другие аналоги</p>
+										<p>Средства очищающие (пенки, гели, муссы)</p>
+										<p>Продукция косметическая жидкая, не содержащая спирт: Лосьоны, лосьоны-тоники, тоники; <br>Жидкие эликсиры; гидролаты;Полоскания; Ополаскиватели</p>
+										<p>Продукция косметическая порошкообразная и компактная, предназначенные для макияжа лица, тела и волос</p>
+										<p>Интимная косметика</p>
+										<p>Гигиеническая моющая косметическая продукция (пена для ванн, гель для душа, жидкое туалетное мыло; шампуни для волос и тела и т.п.)</p>
+										<p>Дезодоранты, депиляторы и косметическая продукция для депиляции в аэрозольной упаковке и не в аэрозольной упаковке, дезодоранты сухие твердые</p>
+										<p>Продукция косметическая для окрашивания, осветления химической завивки и выпрямления волос, средства для завивки и укладки волос, средства для удаления краски с волос; Оттеночные средства</p>
+										<p>Продукция косметическая для химической завивки и распрямления волос на основе тиоловых соединений; <br>Средства для холодной завивки; Красящие средства для волос</p>
+										<p>Косметическая продукция для принятия ванн, соли для ванн, сухие средства для ванн</p>
+										<p>Продукция парфюмерно-косметическая в аэрозольной упаковке с пропеллентом: средства для ухода за кожей (крем, гель, мусс, пена, лосьон, тоник, спрей, масло); гигиенические моющие средства (пена, гель, мусс, шампунь); дезодорирующие средства (дезодорант, дезодорант-антиперспирант, антиперспирант); средства для бритья (гель, пена, масло, лосьон); средства для ухода за волосами (лак, спрей, мусс, пена, гель, лосьон, кондиционер, ополаскиватель, масло) и другая аналогичная по назначению продукция</p>
+									</div>	
+							  		<h2 class="category__title">Средства гигиены полости рта</h2>
+							  		<div class="category__text">
+							  			<p>Средства гигиены полости рта: Средства гигиены полости рта жидкие; Пасты зубные; Порошок зубной; <br>Средства для домашнего отбеливания зубов</p>
+							  		</div>
+							  		<h2 class="category__title">Средства для стирки</h2>
+									<div class="category__text">
+										<p>Средства для стирки; Синтетические моющие средства</p>
+									</div>	
+									<h2 class="category__title">Товары бытовой химиии</h2>
+									<div class="category__text">
+										<p>Мыло хозяйственное твердое; Мыло твердое туалетное</p>
+										<p>Товары бытовой химии, в том числе в аэрозольной упаковке: Средства водосмягчающие</p>
+										<p>Средства для замачивания</p>
+										<p>Вспомогательные средства для глажения</p>
+										<p>Средства отбеливающие </p>
+										<p>Средства для подсинивания</p>
+										<p>Средства для подкрахмаливания</p>
+										<p>Средства для антиэлектростатической обработки изделий из тканей</p>
+										<p>Мягчители для изделий из тканей (кондиционеры)</p>
+										<p>Средства пятновыводные</p>
+										<p>Средства чистящие и моющие для твердых поверхностей</p>
+										<p>Средства для мытья посуды</p>
+										<p>Средства полирующие</p>
+										<p>Средства по уходу за изделиями из кожи и замши</p>
+										<p>Средства по уходу за автомобилями, мотоциклами, велосипедами</p>
+										<p>Стеклоомывающие жидкости</p>
+										<p>Средства ароматизирующие, дезодорирующие, в том числе средства для уничтожения запахов в помещении и закрытых емкостях</p>
+										<p>Средства различного назначения прочие.</p>
+										<p>Товары бытовой химии в виде жидкостей, в том числе загущенных, порошков, суспензий, паст, содержащие в своем составе соединения с активным хлором или соединения с активным кислородом (содержащих перекисные соединения)</p>
+									</div>
+									<h2 class="category__title">Масла эфирные</h2>
+									<div class="category__text">
+										<p>Масла эфирные, масла косметические, смеси душистых веществ и полупродукты их синтеза; Пропиленгликолевые экстракты, масляные экстракты</p>
+									</div>	
+									<h2 class="category__title">ДСИЗ</h2>
+									<div class="category__text">
+										<p>Средства индивидуальной защиты дерматологические, в т.ч. в аэрозольной упаковке</p>
+										<p>Косметическая продукция индивидуальной защиты кожи от воздействия вредных производственных факторов </p>
+										<p>Средства гидрофильного действия</p>
+										<p>Средства гидрофобного действия</p>
+										<p>Средства комбинированного (универсального) действия</p>
+										<p>Средства для защиты при негативном влиянии окружающей среды (низкие температуры, ветер, ультрафиолетовое излучение диапазонов А, В, С)</p>
+										<p>Средства для защиты от воздействия биологических факторов (микроорганизмов):<br>
+										— с антибактериальным (антимикробным) действием;<br>
+										— с противогрибковым (фунгицидным) действием
+										</p>
+										<p>Средства для защиты от воздействия биологических факторов [насекомых и паукообразных (клещей)]: <br>
+										— средства для защиты от насекомых;<br>
+										— средства для защиты от насекомых и паукообразных (клещей)
+										</p>
+										<p>Средства очищающего типа</p>
+									</div>	
+									<h2 class="category__title">Смывы</h2>
+									<div class="category__text">
+										<p>Смывы —  с технологического оборудования, инвентаря, тары, рук и спецодежды</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="perfumery" role="tabpanel" aria-labelledby="perfumery-tab" tabindex="0">
+							  		<h2 class="category__title">Парфюмерия</h2>
+									<div class="category__text">
+										<p>Изделия парфюмерные жидкие (духи, одеколоны, парфюмерные, туалетные и душистые воды и т.п.)</p>
+										<p>Парфюмерная и косметическая спиртосодержащая продукция</p>
+										<p>Продукция парфюмерная твердая</p>
+										<p>Продукция парфюмерная сухая</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="cosmetics" role="tabpanel" aria-labelledby="cosmetics-tab" tabindex="0">
+							  		<h2 class="category__title">Косметика</h2>
+									<div class="category__text">
+										<p>Продукция косметическая на носителях</p>
+										<p>Продукция косметическая для бритья</p>
+										<p>Продукция косметическая для ухода за ногтями, для ухода и удаления кутикулы; Продукция косметическая для моделирования и полирования ногтей; Средства для маникюра и ухода за ногтями (лаки, базы и основы под лак и т.п.); Жидкости для снятия лака и растворители</p>
+										<p>Продукция декоративной косметики на эмульсионной основе - тональные средства (тональные кремы, базы, основы), румяна, тени для век, блеск для губ, лица и тела, тушь для волос, жидкие тушь для ресниц и подводка для глаз и другая аналогичная по назначению продукция</p>
+										<p>Продукция декоративной косметики на жировой основе, на жировосковой основе - губные помады (в том числе гигиенические и жидкие), блеск и бальзам для губ, тени для век, маскирующие карандаши, румяна, пудра, театральный грим, контурные карандаши для бровей, век и губ, твердая тушь для ресниц и другая аналогичная по назначению продукция</p>
+										<p>Жиросодержащие средства (лосьоны, косметические эмульсии, косметическое молочко и пр.);</p>
+										<p>Косметические гели водные и безводные, предназначенные для ухода за кожей, ресницами, бровями, волосами (в том числе для их укладки) и для макияжа</p>
+										<p>Кремы косметические для ухода за кожей лица, тела, волосами, ногтями, губами, кожей вокруг глаз; <br>Молочко, сливки, сметанка, эмульсии, маски, пилинги, скрабы, эксфолианты, кремы на гелевой основе и другие аналоги</p>
+										<p>Средства очищающие (пенки, гели, муссы)</p>
+										<p>Продукция косметическая жидкая, не содержащая спирт: Лосьоны, лосьоны-тоники, тоники; <br>Жидкие эликсиры; гидролаты;Полоскания; Ополаскиватели</p>
+										<p>Продукция косметическая порошкообразная и компактная, предназначенные для макияжа лица, тела и волос</p>
+										<p>Интимная косметика</p>
+										<p>Гигиеническая моющая косметическая продукция (пена для ванн, гель для душа, жидкое туалетное мыло; шампуни для волос и тела и т.п.)</p>
+										<p>Дезодоранты, депиляторы и косметическая продукция для депиляции в аэрозольной упаковке и не в аэрозольной упаковке, дезодоранты сухие твердые</p>
+										<p>Продукция косметическая для окрашивания, осветления химической завивки и выпрямления волос, средства для завивки и укладки волос, средства для удаления краски с волос; Оттеночные средства</p>
+										<p>Продукция косметическая для химической завивки и распрямления волос на основе тиоловых соединений; <br>Средства для холодной завивки; Красящие средства для волос</p>
+										<p>Косметическая продукция для принятия ванн, соли для ванн, сухие средства для ванн</p>
+										<p>Продукция парфюмерно-косметическая в аэрозольной упаковке с пропеллентом: средства для ухода за кожей (крем, гель, мусс, пена, лосьон, тоник, спрей, масло); гигиенические моющие средства (пена, гель, мусс, шампунь); дезодорирующие средства (дезодорант, дезодорант-антиперспирант, антиперспирант); средства для бритья (гель, пена, масло, лосьон); средства для ухода за волосами (лак, спрей, мусс, пена, гель, лосьон, кондиционер, ополаскиватель, масло) и другая аналогичная по назначению продукция</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="oral-hygiene" role="tabpanel" aria-labelledby="oral-hygiene-tab" tabindex="0">
+							  		<h2 class="category__title">Средства гигиены полости рта</h2>
+									<div class="category__text">
+										<p>Средства гигиены полости рта: Средства гигиены полости рта жидкие; Пасты зубные; Порошок зубной; Средства для домашнего отбеливания зубов</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="laundry-hygiene" role="tabpanel" aria-labelledby="laundry-hygiene-tab" tabindex="0">
+							  		<h2 class="category__title">Средства для стирки</h2>
+									<div class="category__text">
+										<p>Средства для стирки; Синтетические моющие средства</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="household-chemicals" role="tabpanel" aria-labelledby="household-chemicals-tab" tabindex="0">
+							  		<h2 class="category__title">Товары бытовой химиии</h2>
+									<div class="category__text">
+										<p>Мыло хозяйственное твердое; Мыло твердое туалетное</p>
+										<p>Товары бытовой химии, в том числе в аэрозольной упаковке: Средства водосмягчающие</p>
+										<p>Средства для замачивания</p>
+										<p>Вспомогательные средства для глажения</p>
+										<p>Средства отбеливающие </p>
+										<p>Средства для подсинивания</p>
+										<p>Средства для подкрахмаливания</p>
+										<p>Средства для антиэлектростатической обработки изделий из тканей</p>
+										<p>Мягчители для изделий из тканей (кондиционеры)</p>
+										<p>Средства пятновыводные</p>
+										<p>Средства чистящие и моющие для твердых поверхностей</p>
+										<p>Средства для мытья посуды</p>
+										<p>Средства полирующие</p>
+										<p>Средства по уходу за изделиями из кожи и замши</p>
+										<p>Средства по уходу за автомобилями, мотоциклами, велосипедами</p>
+										<p>Стеклоомывающие жидкости</p>
+										<p>Средства ароматизирующие, дезодорирующие, в том числе средства для уничтожения запахов в помещении и закрытых емкостях</p>
+										<p>Средства различного назначения прочие.</p>
+										<p>Товары бытовой химии в виде жидкостей, в том числе загущенных, порошков, суспензий, паст, содержащие в своем составе соединения с активным хлором или соединения с активным кислородом (содержащих перекисные соединения)</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="essential-oils" role="tabpanel" aria-labelledby="essential-oils-tab" tabindex="0">
+							  		<h2 class="category__title">Масла эфирные</h2>
+									<div class="category__text">
+										<p>Масла эфирные, масла косметические, смеси душистых веществ и полупродукты их синтеза; Пропиленгликолевые экстракты, масляные экстракты</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="dsiz" role="tabpanel" aria-labelledby="dsiz-tab" tabindex="0">
+							  		<h2 class="category__title">ДСИЗ</h2>
+									<div class="category__text">
+										<p>Средства индивидуальной защиты дерматологические, в т.ч. в аэрозольной упаковке</p>
+										<p>Косметическая продукция индивидуальной защиты кожи от воздействия вредных производственных факторов </p>
+										<p>Средства гидрофильного действия</p>
+										<p>Средства гидрофобного действия</p>
+										<p>Средства комбинированного (универсального) действия</p>
+										<p>Средства для защиты при негативном влиянии окружающей среды (низкие температуры, ветер, ультрафиолетовое излучение диапазонов А, В, С)</p>
+										<p>Средства для защиты от воздействия биологических факторов (микроорганизмов):<br>
+										— с антибактериальным (антимикробным) действием;<br>
+										— с противогрибковым (фунгицидным) действием
+										</p>
+										<p>Средства для защиты от воздействия биологических факторов [насекомых и паукообразных (клещей)]: <br>
+										— средства для защиты от насекомых;<br>
+										— средства для защиты от насекомых и паукообразных (клещей)
+										</p>
+										<p>Средства очищающего типа</p>
+									</div>	
+							  	</div>
+							  	<div class="tab-pane" id="flushes" role="tabpanel" aria-labelledby="flushes-tab" tabindex="0">
+							  		<h2 class="category__title">Смывы</h2>
+									<div class="category__text">
+										<p>Смывы —  с технологического оборудования, инвентаря, тары, рук и спецодежды</p>
+									</div>	
+							  	</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-content__q-form row container-fluid">
+			<div class="row">
+				<div class="q-form-text col-4">
+					<h2>Есть вопросы? Мы поможем!</h2>
+					<p>Если у вас есть вопросы по лабораторным испытаниям продукции, стоимости или по срокам проведения исследований, оставьте свои контактные данные — наш менеджер свяжется с Вами в течение 10 минут.</p>
+				</div>
+				<div class="col-4">
+
+					<form class="request-form needs-validation" novalidate>
+						<div class="request-form__inside">
+							<div class="mb-3">
+								<input type="text" class="form__input form-control" placeholder="Имя" aria-label="Имя">
+							</div>
+						  	<div class="mb-3">
+						    	<input type="text" class="form__input form-control" id="validationInput1" placeholder="Телефон" required>
+						    	<div class="invalid-feedback">*Поле, обязательное для ввода</div>
+						  	</div>
+						  	<button class="btn-call btn-primary" type="submit">Заказать звонок</button>
+						  	<label>Нажимая кнопку «Заказать звонок», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
+						</div>
+	      				<div class="request-form__result success-text">
+	      					<p class="success__title">Спасибо за заявку!</p>
+	      				</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+    </main>
+
+    <footer class="container-fluid ">
+    	<div class="footer">
+
+			<a href="/" class="footer__logo l-logo l-logo__footer d-flex align-items-center text-dark text-decoration-none">
+		      	<span class="logo-img"></span>
+				<span class="logo-text">
+					ИСТЭК-ЛАБ
+					<small>Испытательный лабораторный центр</small>
+				</span> 
+	      	</a>
+			
+			<div class="footer__addressone">
+				<h3>ИЛЦ ИСТЭК-ЛАБ</h3>
+				<ul class="footer__contacts nav">
+					<li class="contacts-item"><span class="contacts__location"></span>140121, Московская область, Раменский район, город Раменское, рабочий поселок Ильинский, ул. Пролетарская, дом 49, этаж 3, комната 185.</li>
+					<li class="contacts-item"><span class="contacts__time"></span>пн-пт с 8:30 до 17:00</li>
+					<li class="contacts-item"><span class="contacts__phone"></span>+7 (495) 128-88-21</li>
+					<li class="contacts-item"><span class="contacts__mail"></span>info@istek-lab.ru</li>
+				</ul>
+			</div>
+
+			<div class="footer__addresstwo">
+				<h3>Центр сертификации АНО ЭКЦ «ИСТЭК»</h3>
+				<ul class="footer__contacts nav">
+					<li class="contacts-item"><span class="contacts__location"></span>г. Москва, ул. Шаболовка, дом 34, строение 2, этаж 2, помещение 1, комната 2 г.</li>
+					<li class="contacts-item"><span class="contacts__time"></span>пн-пт с 9:00 до 18:00</li>
+					<li class="contacts-item"><span class="contacts__phone"></span>+7 (495) 747-19-74</li>
+				</ul>
+			</div>
+		
+    	
+			<div class="footer__menus">
+				<ul class="footer__menu--new footer__menu__links nav">
+			      <li class="nav-item"><a href="#" class="nav-link">Область аккредитации</a></li>
+			      <li class="nav-item"><a href="#" class="nav-link">Испытания продукции</a></li>
+			      <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+			      <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+			      <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+			      <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+			    </ul>
+			
+			
+				<ul class="footer__social social__networks__icons nav">
+			      <li class="icon-item"><a href="#" class="nav-link"><img src="images/footer-icons/footer-icon-1.svg" alt=""></a></li>
+			      <li class="icon-item"><a href="#" class="nav-link"><img src="images/footer-icons/footer-icon-2.svg" alt=""></a></li>
+			      <li class="icon-item"><a href="#" class="nav-link"><img src="images/footer-icons/footer-icon-3.svg" alt=""></a></li>
+			  	</ul>
+			</div>
+			
+			<div class="footer__copyright">© 2021–2022 ИСТЭК-ЛАБ.  Все права защищены.  <a href="#">Карта сайта</a> | <a href="#">Политика конфиденциальности</a></div>
+		</div>
+    </footer>
+
+	<!-- Modals -->
+	<div class="license__modal modal fade" id="exampleModalLisence" tabindex="-1" aria-labelledby="exampleModalLisenceLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="license__img">
+	      		<img src="" alt="" id="licenseImg">
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="call__modal modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title" id="exampleModalLabel">Оформление заявки</h2>
+	        <p>Оставьте ваши контактные данные, и наш менеджер свяжется с вами в течение 10 минут.</p>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form class="request-form">
+				<div class="request-form__inside">
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control" placeholder="Имя*" aria-label="Имя">
+					</div>
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control" placeholder="Телефон*" aria-label="Телефон">
+					</div>
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control" placeholder="Email" aria-label="Email">
+					</div>
+				    <button class="btn-call btn-primary" type="button">Отправить заявку</button>
+				    <label>Нажимая кнопку «Отправить заявку», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
+				</div>
+			</form>
+	      </div>
+	      <div class="modal-result success-text">Заявка отправлена!</div>
+	    </div>
+	  </div>
+	</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> 
+    <script src='js/validator.min.js'></script> 
+	<script src="js/scroller.min.js"></script>
+
+    <script src="js/main.js"></script> <!-- main js file -->
+	<script src="js/cards_new.js"></script>
+
+  </body>
+</html>

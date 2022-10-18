@@ -59,11 +59,12 @@
 			    </div>
 			
 			    <div class="btn-block">
-
 				    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
 				        <span class="toogler__btn"></span>
 				    </button>
-					<button type="button" class="btn-call btn-primary"><span>Заказать звонок</span></button>
+					<button type="button" class="btn-call btn-primary" data-bs-toggle="modal" data-bs-target="#callModal"><span>Заказать звонок</span></button>
+					<!-- mobile close-filter btn -->
+					<button type="button" class="categories__popup__close" data-bs-dismiss="offcanvas" data-bs-target="#catFilter" aria-controls="catFilter" aria-label="Close"></button>
 				</div>
 
 			</div>
@@ -314,6 +315,9 @@
 						  	<button class="btn-call btn-primary" type="submit">Заказать звонок</button>
 						  	<label>Нажимая кнопку «Заказать звонок», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
 						</div>
+	      				<div class="request-form__result success-text">
+	      					<p class="success__title">Спасибо за заявку!</p>
+	      				</div>
 					</form>
 				</div>
 			</div>
@@ -634,13 +638,13 @@
 						<p>Испытательная лаборатория «ИСТЭК-ЛАБ» является <b>Независимой и Аккредитованной Лабораторией</b> на проведение комплексных испытаний для косметики, парфюмерии и средств индивидуальной защиты дерматологических.</b>
 						</p>
 						<p>Мы <b>аккредитованы</b> Федеральной Службой по Аккредитации и внесены в национальную часть единого реестра.  </p>
-						<a class="licenses__photo" data-bs-toggle="modal" data-bs-target="#exampleModalLisence">
-							<img src="images/licenses/license-1.png" data-lg="images/licenses/license-1-lg.jpg" class="img-fluid">
+						<a href="" class="licenses__photo" data-bs-toggle="modal" data-bs-target="#exampleModalLisence" data-lg="images/licenses/license-1-lg.jpg">
+							<img src="images/licenses/license-1.png"class="img-fluid">
 							<span class="open__photo"></span>
 						</a>
 						<p>Лаборатория имеет <b>Лицензию</b> на работу с микроорганизмами 3–4 <br>групп патогенности.</p>
-						<a class="licenses__photo photo-2" data-bs-toggle="modal" data-bs-target="#exampleModalLisence">
-							<img src="images/licenses/license-2.png" data-lg="images/licenses/license-2-lg.jpg" class="img-fluid">
+						<a href="" class="licenses__photo photo-2" data-bs-toggle="modal" data-bs-target="#exampleModalLisence" data-lg="images/licenses/license-2-lg.jpg">
+							<img src="images/licenses/license-2.png"class="img-fluid">
 							<span class="open__photo"></span>
 						</a>
 						<p>По результатам подтверждения компетентности в 2022 году мы <br>признаны одной из лучших лабораторий в своей области.</p>
@@ -681,8 +685,12 @@
 								<input type="text" class="form__input form-control" placeholder="Телефон" aria-label="Телефон">
 							</div>
 						    <button class="btn-call btn-primary" type="button">Заказать звонок</button>
-						    <label>Нажимая кнопку «Отправить заявку», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
+						    <label>Нажимая кнопку «Заказать звонок», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
 						</div>
+	      				<div class="request-form__result success-text">
+	      					<p class="success__title">Спасибо за заявку!</p>
+	      					<p class="success__text">Наш менеджер перезвонит вам в течение 10 минут.</p>
+	      				</div>
 					</form>
 				</div>
 			</div>
@@ -818,6 +826,7 @@
 	    </div>
 	  </div>
 	</div>
+
 	<div class="documents__modal modal__tp modal fade" id="exampleModal0092011" tabindex="-1" aria-labelledby="exampleModal0092011Label" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
@@ -848,6 +857,7 @@
 	    </div>
 	  </div>
 	</div>
+
 	<div class="license__modal modal fade" id="exampleModalLisence" tabindex="-1" aria-labelledby="exampleModalLisenceLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -863,11 +873,38 @@
 	  </div>
 	</div>
 
-
+	<div class="call__modal modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title" id="exampleModalLabel">Оформление заявки</h2>
+	        <p>Оставьте ваши контактные данные, и наш менеджер свяжется с вами в течение 10 минут.</p>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form class="request-form">
+				<div class="request-form__inside">
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control" placeholder="Имя*" aria-label="Имя">
+					</div>
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control" placeholder="Телефон*" aria-label="Телефон">
+					</div>
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control" placeholder="Email" aria-label="Email">
+					</div>
+				    <button class="btn-call btn-primary" type="button">Отправить заявку</button>
+				    <label>Нажимая кнопку «Отправить заявку», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
+				</div>
+			</form>
+	      </div>
+	      <div class="modal-result success-text">Заявка отправлена!</div>
+	    </div>
+	  </div>
+	</div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/progressbar.min.js"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> 
