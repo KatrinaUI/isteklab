@@ -7,7 +7,18 @@ if(document.querySelector('.page-content__licenses')){
   addPadddingBlock();
 }
 
-// appear elements
+// add paddding for Equipment
+function addPadddingBlockEquip(){
+  let offsetLeft = document.querySelector('.page-content__breadcrumbs').offsetLeft; 
+  document.querySelector('.page-content__equipment').style.padding = `0 0 0 ${offsetLeft}px`;
+}
+if(document.querySelector('.page-content__equipment')){
+  window.addEventListener('resize', addPadddingBlockEquip);
+  addPadddingBlockEquip();
+}
+
+
+// appear elements Docs
 (function($) {
   $.fn.fadeInDelay = function() {
     var init = function() {
@@ -32,6 +43,22 @@ if(document.querySelector('.page-content__documents-types')){
            }
       }
   });
+}
+
+// appear elements Years
+if(document.querySelector('.yearslines')){
+  var windowHeight2 = $(window).height()/2 + 200;
+  var docsTop = $(".page-content__breadcrumbs").offset().top - 100;
+
+  if($(window).width() >= 992){
+      if ($(this).scrollTop() > (docsTop - windowHeight2)){
+
+           if (!$('.page-content__yearslines .yearslines').hasClass('active')) {
+              $('.page-content__yearslines .yearslines').addClass('active');
+              $('.yearslines__item').children('div').fadeInDelay();
+           }
+      }
+  }
 }
 
 
@@ -66,6 +93,28 @@ $('#laboratoryCarousel').owlCarousel({
     }
 });
 
+$('#equipmentCarousel').owlCarousel({
+    rtl: false,
+    loop: true,
+    margin: 20,
+    items: 3,
+    nav: true,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 0
+        },
+        768:{
+            items:1,
+            stagePadding: 162
+        },
+        1000:{
+            items:3,
+            stagePadding: 62
+        }
+    }
+});
+
 if($(window).width() <= 767){
 	$('.tests__cards').addClass('owl-carousel owl-theme owl-ltr');
 	$('.tests__cards').owlCarousel({
@@ -75,6 +124,30 @@ if($(window).width() <= 767){
 	    items: 1,
 	    nav: true
 	});
+}
+
+if($(window).width() <= 991){
+  $('.employees__staff').addClass('owl-carousel owl-theme owl-ltr');
+  $('.employees__staff').owlCarousel({
+      rtl: false,
+      loop: true,
+      margin: 20,
+      items: 2,
+      nav: true,
+      responsive:{
+          0:{
+              items:1
+          },
+          768:{
+              items:2,
+              stagePadding: 85
+          },
+          992:{
+              items:2,
+              stagePadding: 85
+          }
+      }
+  });
 }
 
 // circle progress bar

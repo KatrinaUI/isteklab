@@ -182,7 +182,7 @@ section p b{
 
 .page-content__breadcrumbs ul{
 	display: flex;
-	padding: 30px 24px;
+	padding: 17px 24px 30px 24px;
 	margin-bottom: 26px;
 	list-style: none;
 }
@@ -1120,14 +1120,14 @@ header .btn-call{
 }
 
 .license__modal .modal-dialog{
-	max-width: 856px;
+	max-width: 875px;
 	margin: auto;
 	height: 100vh;
 }
 
 .license__img{
 	position: absolute;
-    width: 100vh;
+    /*width: 100vh;*/
     height: fit-content;
     max-height: calc(100% - 120px);
     top: 0;
@@ -1135,6 +1135,10 @@ header .btn-call{
     margin: auto;
     left: 0;
     right: 0;
+}
+
+.license__img img{
+	max-width: 100%;
 }
 
 .license__modal .modal-content{
@@ -3290,6 +3294,7 @@ footer{
 		margin-bottom: 32px;
 	    height: 125px;
 	    width: 414px;
+	    margin-top: 0;
 	}
 
 	.licenses__photo img{
@@ -3306,6 +3311,7 @@ footer{
 
 	.open__photo {
 	    right: 17px;
+	    margin-top: 0;
 	}
 
 	/* .page-content__laboratory */
@@ -3762,6 +3768,20 @@ footer{
 
 @media (max-width: 767px){
 
+	.page-content__breadcrumbs{
+		padding: 0 16px;
+	}
+
+	.page-content__breadcrumbs ul{
+		padding: 21px 0;
+		margin-bottom: 20px;
+	}
+
+	.page-content__breadcrumbs .col {
+	    padding: 0 12px;
+	}
+	
+
 	.call__modal.modal .success-text{
 		width: calc(100% - 32px);
 	}
@@ -3938,6 +3958,11 @@ footer{
 }
 
 @media (max-width: 767px) and (min-width: 360px){
+
+	.page-content__main h1{
+		font-size: 26px;
+		line-height: 32px;
+	}
 
 	.call__modal .modal-dialog {
 	    width: 100%;
@@ -5035,6 +5060,14 @@ footer{
 	.modal__tp.documents__modal .documents__text,
 	.modal__tp.documents__modal h2.modal-title{
 		padding: 0;
+	}
+
+	.page-content__q-form .request-form {
+	    margin-bottom: 48px;
+	}
+
+	.page-content__q-form{
+		margin-top: 50px;
 	}
 
 }

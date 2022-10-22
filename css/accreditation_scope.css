@@ -523,4 +523,8 @@
 		z-index: 1;
 	}
 
+	.page-content__q-form {
+	    z-index: 0;
+	}
+
 }
