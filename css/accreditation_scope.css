@@ -393,7 +393,6 @@
 	    margin-top: 64px;
 	}
    
-
 }
 
 @media (max-width: 768px){
@@ -528,4 +527,17 @@
 	    z-index: 0;
 	}
 
+}
+
+
+@media (max-width: 767px) and (min-width:400px){
+	.top-baner h2 {
+	    max-width: 356px;
+	}
+
+	.page-content__banner.top-baner>.row {
+	    background-size: 479%;
+	    background-position-x: -1109px;
+	    background-position-y: 0px;
+	}
 }
