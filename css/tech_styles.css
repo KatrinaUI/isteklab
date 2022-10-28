@@ -1,0 +1,71 @@
+.page-content__tech{
+	margin: 170px auto 50px;
+	max-width: 773px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	padding: 40px 0 48px;
+	text-align: center;
+}
+
+.page-content__tech .section-sign p{
+	font-family: 'Graphik_Bold';
+	font-weight: 700;
+	font-size: 120px;
+	line-height: 120px;
+	color: #000000;
+	margin-bottom: 8px;
+}
+
+.page-content__tech .section-title h1{
+	font-family: 'Opensans_Bold';
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 48px;
+}
+
+.page-content__tech .section-text{
+	text-align: center;
+}
+
+.page-content__tech .section-text p{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #525252;
+	margin: 40px auto 43px;
+	max-width: 475px;
+}
+
+.page-content__tech .section-btn .btn{
+	min-width: 239px;
+    padding: 11px 36px 13px;
+    background-color: #fff;
+    border: 1px #27AFE4 solid;
+    border-radius: 5px;
+    font-family: 'Opensans_Semibold';
+    font-size: 16px;
+    color: #27AFE4;
+    max-height: 50px;
+}
+
+.page-content__tech .section-btn .btn:hover{
+	color: #8860D0;
+	border-color: #8860D0;
+}
+
+.page-maintenance.page-content__tech{
+	padding-top: 78px;
+	padding-bottom: 88px;
+}
+
+.page-maintenance.page-content__tech .section-title h1{
+	margin-bottom: 0;
+}
+
+.page-maintenance.page-content__tech .section-text p{
+	margin: 56px auto 64px;
+}
