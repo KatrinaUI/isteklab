@@ -405,6 +405,10 @@
 
 @media (max-width: 767px) and (min-width: 360px){
 
+	section.page-content__q-form:after{
+		top: -55px;
+	}
+
 	.product-categories__popup__mobile .categories__popup__close{
 		display: none;
 	}

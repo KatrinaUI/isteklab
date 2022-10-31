@@ -286,5 +286,17 @@ if($(window).width() <= 767){
   });
 }
 
+// tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+if($(window).width() >= 992){
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,{
+    trigger: 'hover'
+  }));
+}
+if($(window).width() > 767){
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,{
+    trigger: 'click'
+  }));
+}
 
 

@@ -842,6 +842,10 @@ main.page-content{
 
 @media(max-width: 767px){
 
+	section.page-content__q-form:after{
+		top: -55px;
+	}
+
 	section.container-fluid {
 	    padding-left: 16px;
 	    padding-right: 16px;
