@@ -179,7 +179,7 @@ if(document.querySelector('.why__percent__block')){
 $('.request-form .btn-call').on('click', function(){
 
 	let sendForm = true;
-	$(this).parents('.request-form').find('input').each(function() {
+	$(this).parents('.request-form').find('input.required--input').each(function() {
 	    if ($(this).val() != '') {
 	    	$(this).addClass('correct-input');
 	    	$(this).removeClass('incorrect-input');
@@ -206,6 +206,14 @@ $('.request-form .btn-call').on('click', function(){
     }
 	return false;
 });
+
+$(function(){
+  //Использование параметра completed
+  $(".phone--input").mask("+7(999) 999-9999", {
+    // completed: function(){ alert("Вы ввели номер: " + this.val()); }
+  });
+});
+
 
 $('.stack-cards__item').each(function() {
 	const height = $(this).find('.step-item__text').outerHeight();
