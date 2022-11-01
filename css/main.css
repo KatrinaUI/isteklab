@@ -130,7 +130,7 @@ section p b{
 	background-color: #27AFE4;
 }
 
-.btn-call:focus{
+.btn-call:active{
 	background-color: #B6B5FB;
 }
 
