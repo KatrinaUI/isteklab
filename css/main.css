@@ -579,6 +579,12 @@ header .btn-call{
     top: 10px;
 }
 
+.card-link:focus{
+	outline: none;
+	box-shadow: none;
+	border: 0;
+}
+
 .card-link:hover:after{
     background: url(../images/violet-arrow.svg) left center no-repeat;
 }

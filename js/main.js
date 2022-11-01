@@ -208,7 +208,6 @@ $('.request-form .btn-call').on('click', function(){
 });
 
 $(function(){
-  //Использование параметра completed
   $(".phone--input").mask("+7(999) 999-9999", {
     // completed: function(){ alert("Вы ввели номер: " + this.val()); }
   });
@@ -270,6 +269,14 @@ triggerTabList.forEach(triggerEl => {
     event.preventDefault()
     tabTrigger.show()
   })
+});
+
+$(document).on('click', '#tabsCategories button', function(){ 
+    var destination = $('.main-contentainer__sidebar').offset().top - 130;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 500);
+    return false;
 });
 
 // close Call popup
