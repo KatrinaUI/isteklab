@@ -114,7 +114,8 @@ section p b{
 	display: none;
 }
 
-.btn-call {
+.btn-call,
+.btn--request{
     min-width: 239px;
     padding: 13px 52px;
     background-color: #68CCF3;
@@ -126,11 +127,13 @@ section p b{
     max-height: 50px;
 }
 
-.btn-call:hover{
+.btn-call:hover,
+.btn--request:hover{
 	background-color: #27AFE4;
 }
 
-.btn-call:active{
+.btn-call:active,
+.btn--request:active{
 	background-color: #B6B5FB;
 }
 
@@ -438,7 +441,8 @@ span.logo-img{
 	margin: 0 20px;
 }
 
-header .btn-call{    
+header .btn-call,   
+header .btn--request{    
 	margin-top: 3px;
 }
 
@@ -2585,7 +2589,8 @@ footer{
 @media (max-width: 1390px) and (min-width: 992px){
 
 
-	.fixed .btn-block .btn-call{
+	.fixed .btn-block .btn-call,
+	.fixed .btn-block .btn--request{
 		background: url(../images/el_phone.svg) right center no-repeat;
 	}
 }
@@ -2608,7 +2613,8 @@ footer{
 	    z-index: 1000;
 	}
 
-	header .btn-call{
+	header .btn-call,
+	header .btn--request{
 		background: url(../images/el_phone.svg) right center no-repeat;
 		margin-top: 12px;
 	    width: 35px;
@@ -2616,15 +2622,19 @@ footer{
 	}
 
 	header .btn-call:hover,
-	header .btn-call:focus{
+	header .btn--request:hover,
+	header .btn-call:focus,
+	header .btn--request:focus{
 		background: url(../images/el_phone.svg) right center no-repeat
 	}
 
-	header .btn-call{
+	header .btn-call,
+	header .btn--request{
 		padding-left: 0;
 	}
 
-	header .btn-call span{
+	header .btn-call span,
+	header .btn--request span{
 		display: none;
 	}
 
@@ -2929,7 +2939,8 @@ footer{
 
 	/* top menu */
 
-	header .btn-call{
+	header .btn-call,
+	header .btn--request{
 		width: 35px;
 		height: 32px;
 		padding: 0;
@@ -2938,11 +2949,13 @@ footer{
 		order: 3;
 	}
 
-	header .btn-call span{
+	header .btn-call span,
+	header .btn--request span{
 		display: none;
 	}
 
-	header .btn-call:hover{
+	header .btn-call:hover,
+	header .btn--request:hover{
 		background-color: inherit;
 	}
 
@@ -2959,7 +2972,8 @@ footer{
 	    background: url(../images/toogler-dark.svg) center right no-repeat;
 	}
 
-	header.fixed .btn-call {
+	header.fixed .btn-call ,
+	header.fixed .btn--request {
 	    background: url(../images/el_phone-dark.svg) right center no-repeat;
 	}
 
@@ -3938,7 +3952,8 @@ footer{
     	max-height: 32px;
 	}
 
-	header .btn-call{
+	header .btn-call,
+	header .btn--request{
 		background: url(../images/el_phone.svg) right center no-repeat;
 		width: 35px;
 		height: 32px;
@@ -4317,7 +4332,8 @@ footer{
     	border-radius: 0;
 	}
 
-	.header__menu.offcanvas-lg.offcanvas-end.show + .btn-block .btn-call{
+	.header__menu.offcanvas-lg.offcanvas-end.show + .btn-block .btn-call,
+	.header__menu.offcanvas-lg.offcanvas-end.show + .btn-block .btn--request{
 		display: none;
 	}
 
