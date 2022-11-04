@@ -188,6 +188,7 @@ section p b{
 	padding: 17px 24px 30px 24px;
 	margin-bottom: 26px;
 	list-style: none;
+	white-space: nowrap;
 }
 
 .breadcrumbs__item a,

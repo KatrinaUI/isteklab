@@ -17,6 +17,24 @@ if(document.querySelector('.page-content__equipment')){
   addPadddingBlockEquip();
 }
 
+// news grid elements count
+function funcNews(){
+  let countChildren = $('.news-item').length;
+  $('.news-item').each(function(index){
+    let indexR = index + 1;
+    if(index === 0) $(this).addClass('news-item--lg');
+    
+    if(countChildren % 3 === 1){
+      if(indexR === countChildren) $(this).addClass('news-item--lg');  
+    }
+    if(countChildren % 3 === 0){
+      if(indexR === countChildren) $(this).addClass('news-item--lg');  
+      if(indexR === countChildren - 2) $(this).addClass('news-item--lg');  
+    }
+  });
+}
+funcNews();
+
 
 // appear elements Docs
 (function($) {
