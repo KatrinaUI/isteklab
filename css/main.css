@@ -115,7 +115,8 @@ section p b{
 }
 
 .btn-call,
-.btn--request{
+.btn--request,
+.btn--subscribe{
     min-width: 239px;
     padding: 13px 52px;
     background-color: #68CCF3;
@@ -128,12 +129,14 @@ section p b{
 }
 
 .btn-call:hover,
-.btn--request:hover{
+.btn--request:hover,
+.btn--subscribe:hover{
 	background-color: #27AFE4;
 }
 
 .btn-call:active,
-.btn--request:active{
+.btn--request:active,
+.btn--subscribe:active{
 	background-color: #B6B5FB;
 }
 
@@ -1393,7 +1396,8 @@ header .btn--request{
 	border-bottom-right-radius: 0;
 }
 
-.request-form--subscribe .form--btn{
+.request-form--subscribe .form--btn,
+.request-form--subscribe .btn--subscribe{
     grid-column: 2 / 3;
     max-width: 173px;
     border-top-left-radius: 0;
@@ -1500,9 +1504,14 @@ header .btn--request{
     padding-left: 51px;
 }
 
-.request-form button{
+.request-form button,
+.request-form input[type="submit"]{
 	width: 100%;
 	margin-bottom: 10px;
+}
+
+.request-form input[type="submit"].btn--subscribe{
+    margin-left: -16px;
 }
 
 .request-form label{
@@ -4043,7 +4052,8 @@ footer{
 	    justify-content: start;
 	}
 
-	.request-form--subscribe .form--btn{
+	.request-form--subscribe .form--btn,
+	.request-form--subscribe .btn--subscribe{
 		min-width: 153px;
 	}
 }
@@ -4287,7 +4297,8 @@ footer{
 		text-align: left;
 	}
 
-	.request-form--subscribe .form--btn{
+	.request-form--subscribe .form--btn,
+	.request-form--subscribe .btn--subscribe{
 		max-width: 100%;
 		min-height: 50px;
 	    border-radius: 3px;
@@ -5412,6 +5423,10 @@ footer{
 
 	.page-content__q-form:after{
 		top: -140px;
+	}
+
+	.request-form input[type="submit"].btn--subscribe {
+	    margin-left: 0;
 	}
 
 }
