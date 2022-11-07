@@ -348,8 +348,23 @@ section p b{
 .panel__location{
 	background: url(../images/location.svg) left center no-repeat;
 	padding-left: 21px;
+	font-family: 'Opensans_Semibold';
+	font-weight: 600;
     font-size: 16px;
     line-height: 50px;
+}
+
+.panel__link{
+	font-family: 'Opensans_Semibold';
+	font-weight: 600;
+	padding-left: 32px;
+    font-size: 16px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.panel__link:hover{
+	color: #68CCF3;
 }
 
 .panel__contacts{
@@ -440,6 +455,10 @@ span.logo-img{
 
 .header__menu__links li{
 	margin: 0 20px;
+}
+
+.header__menu__links li:last-child{
+	display: none;
 }
 
 header .btn-call,   
@@ -3737,6 +3756,10 @@ footer{
 }
 
 @media (max-width: 991px){	
+
+	.header__menu__links li:last-child{
+		display: block;
+	}
 
 	.custom-tooltip{
 	    display: inline-block;
