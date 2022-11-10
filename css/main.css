@@ -2228,6 +2228,15 @@ footer{
 
 /* footer__menu */
 
+.footer ul li{
+	position: relative;
+    margin-bottom: 16px;
+    padding-left: 32px;
+    font-family: 'Opensans_Regular';
+    font-size: 16px;
+    line-height: 22px;
+}
+
 .footer__menu>div{
 	padding: 0;
 }
@@ -2295,10 +2304,10 @@ footer{
 
 .footer {
 	display: grid;
-	grid-template-areas:
-		"logo addressone addresstwo"
-		"menu menu menu"
-		"copyright copyright copyright";
+	gap: 32px 0;
+	grid-template-areas: "logo logo logo"
+						"addressone menu social"
+						"copyright copyright copyright";
     max-width: 1360px;
     margin: auto;
 }
@@ -2307,8 +2316,22 @@ footer{
 	grid-area: logo;
 }
 
+.footer__social{
+	grid-area: social;
+    display: flex;
+    gap: 24px;
+    justify-self: flex-end;
+    padding-right: 0px;
+}
+
+.footer .footer__social li{
+	margin: 0;
+	padding: 0; 
+}
+
 .footer__addressone{
 	grid-area: addressone;
+	max-width: 532px;
 }
 
 .footer__addresstwo{
@@ -2320,21 +2343,30 @@ footer{
 	grid-area: menu;
 	display: flex;
 	justify-content: space-between;
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	grid-column: 2/3;
 }
 
 .footer__menu--new {
-	gap: 56px;
-	align-items: center;
+	grid-area: menu;
+    display: grid;
+    grid-template-columns: minmax(230px, 50%) minmax(90px, 50%);
+    gap: 18px 112px;
+    justify-self: flex-start;
+    padding-left: 114px;
 }
+
+.footer .footer__menu--new li{
+	padding: 0;
+	margin: 0;
+}
+
 .footer__menu--new a{
 	padding: 0;
 	font-family: 'Opensans_Regular';
 	color: #fff;
 	font-weight: 400;
 	font-size: 20px;
-	line-height: 27px;
+	line-height: 20px;
 }
 
 .footer__menu--new a:hover{
@@ -2349,8 +2381,14 @@ footer{
 	padding: 0;
 }
 
+.footer__social li a img{
+	max-height: 24px;
+}
+
 .footer__copyright{
 	grid-area: copyright;
+	padding-top: 32px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer__copyright a{
@@ -2373,22 +2411,12 @@ footer{
     font-size: 24px;
     line-height: 30px;
     padding-top: 4px;
-    padding-left: 29px;
     color: #fff;
-}
-
-.footer ul li{
-	position: relative;
-    margin-bottom: 16px;
-    padding-left: 32px;
-    font-family: 'Opensans_Regular';
-    font-size: 16px;
-    line-height: 22px;
 }
 
 .footer__addressone ul,
 .footer__addresstwo ul{
-	padding-left: 29px;
+	padding-left: 0;
 }
 
 .footer__addressone ul li span,
@@ -2434,14 +2462,40 @@ footer{
 }
 
 .footer__menus ul li {
-    margin-bottom: 24px;
-    margin-top: 24px;
     padding-left: 0;
 }
 
+ul.footer__menu--new li:nth-child(1){
+	order: 1;
+}
+
+ul.footer__menu--new li:nth-child(2){
+	order: 3;
+}
+
+ul.footer__menu--new li:nth-child(3){
+	order: 5;
+}
+
+ul.footer__menu--new li:nth-child(4){
+	order: 7;
+}
+
+ul.footer__menu--new li:nth-child(5){
+	order: 2;
+}
+
+ul.footer__menu--new li:nth-child(6){
+	order: 4;
+}
+
+ul.footer__menu--new li:nth-child(7){
+	order: 6;
+}
+
 .footer__copyright{
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 32px;
+    margin-bottom: 32px;
     font-family: 'Opensans_Regular';
     font-size: 12px;
     line-height: 20px;
@@ -2717,6 +2771,46 @@ footer{
 	}
 }
 
+@media (max-width: 1280px){
+
+
+	.footer {
+		grid-template-areas:
+        "logo menu"
+        "addressone menu"
+        "social menu"
+        "copyright copyright";
+		padding: 0 20px;	
+	}	
+
+	.footer{
+		padding-right: 20px;
+	    padding-left: 20px;
+	    padding-top: 40px;
+	}
+
+	.footer__addresstwo h3{
+		max-width: 100%;
+	}
+
+	.footer__menu--new {
+	    grid-template-columns: 1fr;
+	    gap: 10px;
+	}
+
+	.footer__social {
+		gap: 32px;
+	    padding-left: 0;
+	    margin-bottom: 13px;
+	    margin-right: 0;
+	    justify-self: start;
+	}
+
+	.footer .l-logo__footer {
+	    margin-left: 0;
+	}
+}
+
 @media (max-width: 1200px){
 
 	.footer__menu--new {
@@ -2764,12 +2858,6 @@ footer{
 		background-size: contain;
 	}
 
-	.footer {
-		grid-template-areas:
-			"addressone logo"
-			"addresstwo	menu"
-			"copyright menu";
-	}
 	.footer__menus {
 		flex-direction: column;
 	}
@@ -2873,7 +2961,6 @@ footer{
 
 	.footer__copyright {
 	    padding-left: 0;
-	    max-width: 315px;
 	}
 
 	.footer .footer__menus li{
@@ -3098,10 +3185,6 @@ footer{
 	.page-content__banner .card p{
 		margin-bottom: 40px;
 	}
-
-/*	.card-price span.card-price_cur{
-		font-family: 'Graphik_Bold';
-	}*/
 
 	.card-link{
 		padding-top: 0px;
@@ -4061,6 +4144,51 @@ footer{
 	.request-form--subscribe .btn--subscribe{
 		min-width: 153px;
 	}
+
+	.footer .l-logo__footer{
+	    margin-left: 0;
+	}
+
+	.footer__copyright {
+	    padding-left: 0;
+	    margin-top: 0;
+	    max-width: 100%;
+	}
+
+	.footer__social {
+		padding-left: 0; 
+		margin-bottom: 13px;
+		margin-right: 0; 
+	    justify-self: start;
+	}
+
+	.footer__menu--new {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	footer{
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+
+	.footer {
+	    grid-template-areas:
+	        "logo menu"
+	        "addressone menu"
+	        "social menu"
+	        "copyright copyright";
+	}
+
+	.footer__social{
+    	gap: 32px;
+	}
+
+	.footer__social li a img {
+	    max-height: 32px;
+	}
+
+
 }
 
 
@@ -4100,24 +4228,6 @@ footer{
 
 	.page-content__map{
 		height: 374px;
-	}
-
-	.footer {
-		grid-template-areas:
-			"logo"
-			"addressone"
-			"addresstwo"
-			"menu"
-			"copyright";
-	}	
-
-	.footer{
-		padding-right: 0;
-		padding-left: 0;
-	}
-
-	.footer__addresstwo h3{
-		max-width: 100%;
 	}
 }
 
@@ -4239,25 +4349,16 @@ footer{
 		padding-right: 43px;
 	}
 
-	.footer .l-logo__footer {
-	    margin-left: 23px;
+	.footer__menu--new{
+		justify-self: flex-end;
 	}
 
-	.footer__menu--new {
-	    gap: 0;
-	    padding-left: 23px;
-	    padding-top: 23px;
-	}
-
-	.footer__social {
-	    padding-left: 24px;
-	    margin-bottom: 13px;
-	    margin-right: -20px;
-	}
-
-	.footer__social li{
-	    margin-left: 31px;
-    	margin-right: 0;
+	.footer {
+	    grid-template-areas:
+	        "logo menu"
+	        "addressone menu"
+	        "social menu"
+	        "copyright copyright";
 	}
 }
 
@@ -5215,7 +5316,6 @@ footer{
 	.footer__addresstwo h3{
 		margin-top: 0;
 		padding-top: 0;
-		/*max-width: 250px;*/
 	}
 
 	.footer__menus{
@@ -5275,7 +5375,6 @@ footer{
 
 	ul.footer__social{
 		text-align: center;    
-		display: inline-block;
 		margin-top: 24px;
 	}
 
@@ -5464,6 +5563,63 @@ footer{
 
 @media (max-width: 640px){
 
+	.footer {
+		padding-right: 0;
+		padding-left: 0;
+	    grid-template-areas:
+	        "logo"
+	        "addressone"
+	        "menu"
+	        "social"
+	        "copyright";
+	}
+
+	.footer__menu--new {
+	    justify-self: flex-start;
+	    width: 100%;
+	}
+
+	.footer__menu--new a {
+	    font-size: 20px;
+	    line-height: 20px;
+	}
+
+	ul.footer__menu--new li a:after {
+	    content: '';
+	    height: 10px;
+	    width: 6px;
+	    background: url(../images/arrow_bottom-menu.svg) right center no-repeat;
+	    display: inline-block;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    margin: auto;
+	}
+
+	.footer .footer__menu--new li{
+	    padding: 16px 0;
+	    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.footer__menu--new a:hover {
+	    color: #68CCF3;
+	}
+
+	ul.footer__social{
+	    margin-top: 16px;
+	    width: 100%;
+	    display: flex;
+    	gap: 0 31px;
+	    display: flex;
+	    justify-content: center;
+	}
+
+	.footer__copyright{
+		margin-top: 3px;
+		margin-bottom: 8px;
+		text-align: center;
+	}
 }
 
 @media (max-width: 500px){
@@ -5479,7 +5635,6 @@ footer{
 	}
 
 	.page-content__banner__text p {
-		/*max-width: 320px;*/
 		max-width: 288px;
 		min-height: 88px;
 	}
