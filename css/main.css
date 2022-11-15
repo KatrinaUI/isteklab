@@ -313,6 +313,10 @@ section p b{
 	margin-bottom: 16px;
 }
 
+.page-content__c-form .success-request p.success__title{
+	font-size: 34px;
+}
+
 .page-content__q-form .success-request p.success__text,
 .page-content__c-form .success-request p.success__text{
 	padding-right: 0;
@@ -2985,6 +2989,10 @@ ul.footer__menu--new li:nth-child(7){
 		display: none;
 	}
 
+	.page-content__c-form .success-request p.success__title {
+	    font-size: 30px;
+	}
+
 	.documents__modal .modal-content {
 	    padding: 68px 24px 0;
 	    border: 0;
@@ -4400,6 +4408,7 @@ ul.footer__menu--new li:nth-child(7){
 
 	.subscribe-img{
 		order: 2;
+		width: 100%;
 	}
 
 	.subscribe-img img{

@@ -212,6 +212,7 @@ $('.request-form .btn-call').on('click', function(){
   		  $(this).parents('.request-form').addClass('success-request');
   		  $(this).parents('.modal-body').hide();
         $(this).parents('.request-form__inside').hide();
+        $(this).parents('section').addClass('success-section');
         if($(window).width() <= 768){
             $(this).parents('.page-content__c-form').find('h2').hide();
         }

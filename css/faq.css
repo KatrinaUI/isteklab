@@ -78,7 +78,6 @@ section.page-content__c-form{
 .c-form-text, .c-form-text+div {
     /*padding-left: 0;*/
 }
-
 @media (max-width: 1424px){	
 
 	section.container-fluid {
@@ -89,6 +88,24 @@ section.page-content__c-form{
 }
 
 @media(max-width: 991px){
+
+	.page-content__c-form .success-request p.success__title {
+	    font-size: 24px;
+	    line-height: 34px;
+	}
+
+	.page-content__subscribe p.success__title{
+		padding-right: 0;
+	}
+
+	.page-content__c-form .success-section h2{
+		display: none;
+	}
+
+	section.page-content__c-form .request-form.success-request {
+	    padding-top: 118px;
+	}
+
 	.section-accordion{
 		padding-top: 64px;
 	}
