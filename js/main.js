@@ -307,6 +307,19 @@ $('#callModal').on('hide.bs.modal', function () {
   $('#callModal').find('form').trigger("reset");
 });
 
+
+//stop video
+const myModalEl = document.getElementById('modalVideo');
+var stopVideo = function(player) {
+  var vidSrc = player.prop('src');
+  player.prop('src', ''); // to force it to pause
+  player.prop('src', vidSrc);
+};
+myModalEl.addEventListener('hide.bs.modal', event => {
+  var videoId = $(this).data('src');
+  stopVideo($('#videoAbout'));
+});
+
 //filter menu
 if($(window).width() <= 767){
   $('#catFilter').on('show.bs.offcanvas', function () {

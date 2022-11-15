@@ -153,6 +153,7 @@ main.page-content{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .video__modal .modal-header button{
