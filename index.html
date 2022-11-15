@@ -23,6 +23,7 @@
 		      <ul class="panel__contacts nav">
 		        <li class="panel__contacts-item">пн-пт с 8:30 до 17:00</li>
 		        <li class="panel__contacts-item"><a href="callto:+7 (495) 128-88-21">+7 (495) 128-88-21</a></li>
+		        <li class="panel__contacts-item">+7 (495) 128-88-21</li>
 		        <li class="panel__contacts-item">info@istek-lab.ru</li>
 		      </ul>
 		    </div>
@@ -49,6 +50,7 @@
 							<li><a href="#" class="nav-link">Цены</a></li>
 							<li><a href="#" class="nav-link">Новости</a></li>
 							<li><a href="#" class="nav-link">Контакты</a></li>
+							<li><a href="#" class="nav-link">FAQ</a></li>
 				        </ul>
 				        <div class="contacts-mobile d-lg-none">
 				        	<p class="contacts-mobile__phone"><a href="callto:+7 (495) 128-88-21">+7 (495) 128-88-21</a></p>
@@ -63,6 +65,8 @@
 				        <span class="toogler__btn"></span>
 				    </button>
 					<button type="button" class="btn-call btn-primary" data-bs-toggle="modal" data-bs-target="#callModal"><span>Заказать звонок</span></button>
+
+					<a href="callto:+7 (495) 128-88-21" class="btn-call btn-primary btn-mobile"></a>
 					<!-- mobile close-filter btn -->
 					<button type="button" class="categories__popup__close" data-bs-dismiss="offcanvas" data-bs-target="#catFilter" aria-controls="catFilter" aria-label="Close"></button>
 				</div>
@@ -167,7 +171,7 @@
 					<h2>Услуги лаборатории</h2>
 					<p>Любой товар проверятся по многочисленным параметрам, чтобы убедиться в отсутствии потенциального или реального вреда для конечного потребителя. Мы проводим комплексные испытания парфюмерно-косметической продукции, средств гигиены полости рта, средств индивидуальной защиты дерматологических, средств для стирки <b>для целей декларирования, обязательной и добровольной сертификации, государственной регистрации или производственного контроля.</b>
 					</p>
-					<p>Проводим испытания на соответствие требований Технических регламентов таможенного союза ТР ТС 009<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal0092011">*</a> и 019<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal0192011">**</a>, а также межгосударственных и национальных стандартов с целью оценки качества выпущенной партии продукции.</p>
+					<p>Проводим испытания на соответствие требований Технических регламентов таможенного союза ТР ТС 009<a data-bs-toggle="modal" data-bs-target="#exampleModal0092011">*</a> и 019<a data-bs-toggle="modal" data-bs-target="#exampleModal0192011">**</a>, а также межгосударственных и национальных стандартов с целью оценки качества выпущенной партии продукции.</p>
 					<p><b>Выдаем письма для таможенных органов</b> с целью дальнейших исследований образцов продукции. </p>
 				</div>
 				<div class="services-cards col-3">
@@ -633,7 +637,7 @@
 		<section class="page-content__licenses container-fluid">
 			<div class="row">
 				<div class="col-12">
-					<h2>Лицензии и сертификаты</h2>
+					<h2>Лицензии и&nbsp;сертификаты</h2>
 					<div class="licenses__text">
 						<p>Испытательная лаборатория «ИСТЭК-ЛАБ» является <b>Независимой и Аккредитованной Лабораторией</b> на проведение комплексных испытаний для косметики, парфюмерии и средств индивидуальной защиты дерматологических.</b>
 						</p>
@@ -673,7 +677,7 @@
 			<div class="row">
 				<div class="c-form-text col">
 					<h2>Свяжитесь с нами</h2>
-					<p>Мы ответим на любой интересующий вас вопрос, поможем разобраться в тонкостях производственного контроля, проведем сложные испытания продукции, включая challenge-test, для того, чтобы вы могли гарантировать качество и безопасность для потребителя.</p>
+					<p>Мы ответим на любой интересующий вас вопрос, поможем разобраться в тонкостях производственного контроля, проведем сложные испытания продукции, включая <b>challenge-test</b>, для того, чтобы вы могли гарантировать качество и безопасность для потребителя.</p>
 				</div>
 				<div class="col">
 					<form class="request-form">
@@ -684,8 +688,8 @@
 						    <div class="mb-3">
 								<input type="text" class="form__input form-control" placeholder="Телефон" aria-label="Телефон">
 							</div>
-						    <button class="btn-call btn-primary" type="button">Заказать звонок</button>
-						    <label>Нажимая кнопку «Заказать звонок», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
+						    <button class="btn-call btn-primary" type="button">Отправить заявку</button>
+						    <label>Нажимая кнопку «Отправить заявку», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
 						</div>
 	      				<div class="request-form__result success-text">
 	      					<p class="success__title">Спасибо за заявку!</p>
@@ -699,7 +703,8 @@
     </main>
 
 	<section class="page-content__map">
-		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc1d2f77aa111e2416b7e78bd7e87bfd5c8e9535426cdc82fe8c29a0de10c4f8&amp;source=constructor" width="100%" height="365" frameborder="0"></iframe>
+		<!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc1d2f77aa111e2416b7e78bd7e87bfd5c8e9535426cdc82fe8c29a0de10c4f8&amp;source=constructor" width="100%" height="540" frameborder="0"></iframe> -->
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc1d2f77aa111e2416b7e78bd7e87bfd5c8e9535426cdc82fe8c29a0de10c4f8&amp;source=constructor" width="100%" height="540" frameborder="0"></iframe>
 	</section>
 
     <footer class="container-fluid ">
@@ -842,6 +847,7 @@
 	    </div>
 	  </div>
 	</div>
+
 	<div class="documents__modal modal__tp modal fade" id="exampleModal0192011" tabindex="-1" aria-labelledby="exampleModal0192011Label" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
@@ -910,6 +916,7 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> 
     <script src='js/validator.min.js'></script> 
 	<script src="js/scroller.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 
     <script src="js/main.js"></script> <!-- main js file -->
 	<script src="js/cards_new.js"></script>

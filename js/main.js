@@ -35,6 +35,16 @@ function funcNews(){
 }
 funcNews();
 
+$( document ).ready(function() {
+  // stars links remove
+  console.log('1');
+  if($(window).width() >= 1999){
+    $('.services-text a').on('click', function(){
+      return false;
+    });
+    // $('.services-text a').attr('data-bs-target','');
+  }
+});
 
 // appear elements Docs
 (function($) {
@@ -316,6 +326,7 @@ var stopVideo = function(player) {
   player.prop('src', ''); // to force it to pause
   player.prop('src', vidSrc);
 };
+
 myModalEl.addEventListener('hide.bs.modal', event => {
   var videoId = $(this).data('src');
   stopVideo($('#videoAbout'));

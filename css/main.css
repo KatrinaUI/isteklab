@@ -384,6 +384,10 @@ section p b{
 	line-height: 50px; 
 }
 
+.panel__contacts-item:nth-child(2){
+	display: none;
+}
+
 header{
 	position: fixed;
 	width: 100%;
@@ -471,6 +475,10 @@ span.logo-img{
 header .btn-call,   
 header .btn--request{    
 	margin-top: 3px;
+}
+
+header .btn-call.btn-mobile{
+	display: none;
 }
 
 .header__menu__links a,
@@ -569,6 +577,9 @@ header .btn--request{
 	font-size: 28px;
 	line-height: 28px;
 	color: #000;
+	display: flex;
+    gap: 10px;
+    align-items: baseline;
 }
 
 .card-price span{
@@ -579,7 +590,7 @@ header .btn--request{
 }
 
 .card-price span.card-price_cur{
-	margin-left: 5px;
+	margin-left: -5px;
 	font-family: 'Raleway_Bold';
 	font-weight: bold;
 }
@@ -1121,6 +1132,7 @@ header .btn--request{
 .list-item span{
 	padding-left: 28px;
 	line-height: 30px;
+	color: #525252;
 }
 
 .research__info{
@@ -2116,7 +2128,7 @@ header .btn--request{
 .page-content__map{
 	max-width: inherit;
     overflow: hidden;
-    max-height: 365px;
+    max-height: 540px;
 }
 
 .contacts__map {
@@ -3862,6 +3874,22 @@ ul.footer__menu--new li:nth-child(7){
 
 @media (max-width: 991px){	
 
+	header .btn-call{
+		display: none;
+	}
+
+	header .btn-call.btn-mobile{
+		display: inline-block;
+	}
+
+	.panel__contacts-item:nth-child(2){
+		display: block;
+	}
+
+	.panel__contacts-item:nth-child(3){
+		display: none;
+	}
+
 	.header__menu__links li:last-child{
 		display: block;
 	}
@@ -5528,6 +5556,7 @@ ul.footer__menu--new li:nth-child(7){
 	.modal__step1.documents__modal .documents__text p{
 		font-size: 16px;
 		line-height: 24px;
+		color: #525252;
 	}
 
 	.modal__step1.documents__modal .documents__text a:not(documents__card){
@@ -5546,7 +5575,7 @@ ul.footer__menu--new li:nth-child(7){
 
 	.modal__tp.documents__modal .modal-content {
 	    padding: 40px 24px 40px;
-	    max-width: 100%;
+	    max-width: calc(100% - 32px);
 	}
 
 	.modal__tp.documents__modal .documents__text,
