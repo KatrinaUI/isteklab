@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ИСТЭК-ЛАБ</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"> <!-- main css file -->
+    <link href="css/product_testing.css" rel="stylesheet"> 
+  </head>
+  <body>
+
+	<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">  	
+
+		<nav class="top-panel">
+		    <div class="top-panel__wrap d-flex flex-wrap">
+		      <ul class="nav me-auto">
+		      	<li class="nav-item"><span class="panel__location">Москва</li>
+		      	<li class="nav-item"><a href="#" class="panel__link">FAQ</a></li>
+		      </ul>
+		      <ul class="panel__contacts nav">
+		        <li class="panel__contacts-item">пн-пт с 8:30 до 17:00</li>
+		        <li class="panel__contacts-item"><a href="callto:+7 (495) 128-88-21">+7 (495) 128-88-21</a></li>
+		        <li class="panel__contacts-item">info@istek-lab.ru</li>
+		      </ul>
+		    </div>
+		</nav>
+
+		<nav class="main-menu flex-wrap">
+			<div class="main-menu__wrap d-flex flex-wrap">
+
+		      	<a href="index.html" class="l-logo d-flex text-decoration-none">
+					<span class="logo-img"></span>
+					<span class="logo-text">
+						ИСТЭК-ЛАБ
+						<small>Испытательный лабораторный центр</small>
+					</span> 
+				</a>
+
+			    <div class="header__menu offcanvas-lg offcanvas-end" tabindex="-1" id="bdNavbar">
+					<div class="offcanvas-body">
+				        <ul class="header__menu__links navbar-nav flex-row flex-wrap bd-navbar-nav" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+				          	<li><a href="index.html" class="nav-link">Главная</a></li>
+										<li><a href="accreditation_scope.html" class="nav-link">Область аккредитации</a></li>
+										<li class="active-item"><a href="#" class="nav-link">Испытания продукции</a></li>
+										<li><a href="#" class="nav-link">О нас</a></li>
+										<li><a href="#" class="nav-link">Цены</a></li>
+										<li><a href="#" class="nav-link">Новости</a></li>
+										<li><a href="#" class="nav-link">Контакты</a></li>
+										<li><a href="#" class="nav-link">FAQ</a></li>
+				        </ul>
+				        <div class="contacts-mobile d-lg-none">
+				        	<p class="contacts-mobile__phone"><a href="callto:+7 (495) 128-88-21">+7 (495) 128-88-21</a></p>
+				        	<p class="contacts-mobile__time">пн-пт с 8:30 до 17:00</p>
+				        	<p class="contacts-mobile__mail">info@istek-lab.ru</p>
+				        </div>
+			      	</div>
+			    </div>
+			
+			    <div class="btn-block">
+				    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+				        <span class="toogler__btn"></span>
+				    </button>
+					<button type="button" class="btn-call btn-primary" data-bs-toggle="modal" data-bs-target="#callModal"><span>Заказать звонок</span></button>
+					<!-- mobile close-filter btn -->
+					<button type="button" class="categories__popup__close" data-bs-dismiss="offcanvas" data-bs-target="#catFilter" aria-controls="catFilter" aria-label="Close"></button>
+				</div>
+
+			</div>
+		  </nav>
+
+    </header>
+
+    <main class="page-content">
+
+    	<section class="page-content__banner top-baner">
+    		<div class="row">
+		      	<div class="page-content__banner__text col-12">
+			        <h2>
+			        	<span>Лаборатория ИСТЭК-ЛАБ проводит микробиологические, токсикологические, физико-химические и клинические испытания, а также комплексные исследования продукции</span>
+			        </h2>
+			        <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModalLisence" data-lg="images/licenses/license-1-lg.jpg">Узнать цену</a>
+		       	</div>
+	        </div>
+		</section>
+
+		<section class="page-content__breadcrumbs">
+			<div class="row">
+				<div class="col">
+					<ul>
+						<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+						<li class="breadcrumbs__item"><span>Испытания продукции</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-content__main container-fluid">
+			<div class="row">
+				<div class="section-title col-12">
+					<h1>Испытания продукции</h1>
+				</div>
+				<div class="main-contentainer col-12">
+
+					<div class="main-contentainer__sidebar">
+
+							<!-- categories tabs -->
+							<ul class="product-categories nav nav-tabs" id="tabsCategories" role="tablist">
+							  <li class="product-categories__item microbiological" role="presentation">
+							    <button class="active" id="microbiological-tab" data-bs-toggle="tab" data-bs-target="#microbiological" type="button" role="tab" aria-controls="microbiological" aria-selected="false">Микробиологические</button>
+							  </li>
+							  <li class="product-categories__item physicochemical" role="presentation">
+							    <button id="physicochemical-tab" data-bs-toggle="tab" data-bs-target="#physicochemical" type="button" role="tab" aria-controls="physicochemical" aria-selected="false">Физико-химические</button>
+							  </li>
+							  <li class="product-categories__item toxicological" role="presentation">
+							    <button id="toxicological-tab" data-bs-toggle="tab" data-bs-target="#toxicological" type="button" role="tab" aria-controls="toxicological" aria-selected="false">Токсикологические</button>
+							  </li>
+							  <li class="product-categories__item clinical" role="presentation">
+							    <button id="clinical-tab" data-bs-toggle="tab" data-bs-target="#clinical" type="button" role="tab" aria-controls="clinical" aria-selected="false">Клинические</button>
+							  </li>
+							  <li class="product-categories__item organoleptic" role="presentation">
+							    <button id="organoleptic-tab" data-bs-toggle="tab" data-bs-target="#organoleptic" type="button" role="tab" aria-controls="organoleptic" aria-selected="false">Органолептические</button>
+							  </li>
+							  <li class="product-categories__item comprehensive" role="presentation">
+							    <button id="comprehensive-tab" data-bs-toggle="tab" data-bs-target="#comprehensive" type="button" role="tab" aria-controls="comprehensive" aria-selected="false">Комплексные</button>
+							  </li>
+							</ul>
+
+							<div class="product-categories__popup__mobile offcanvas-lg offcanvas-start offcanvas" tabindex="-1" id="catFilter">
+								
+								<div class="offcanvas-body">
+									<div class="categories__popup__close">
+										<button type="button" class="categories__popup__close" data-bs-dismiss="offcanvas" data-bs-target="#catFilter" aria-controls="catFilter" aria-label="Close"></button>
+									</div>
+									
+									<ul class="product-categories nav nav-tabs" id="tabsCategories" role="tablist">
+									  <li class="product-categories__item microbiological active-item" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="microbiological-tab" data-bs-toggle="tab" data-bs-target="#microbiological" type="button" role="tab" aria-controls="microbiological" aria-selected="false">Микробиологические</button>
+									  </li>
+									  <li class="product-categories__item physicochemical" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="physicochemical-tab" data-bs-toggle="tab" data-bs-target="#physicochemical" type="button" role="tab" aria-controls="physicochemical" aria-selected="false">Физико-химические</button>
+									  </li>
+									  <li class="product-categories__item toxicological" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="toxicological-tab" data-bs-toggle="tab" data-bs-target="#toxicological" type="button" role="tab" aria-controls="toxicological" aria-selected="false">Токсикологические</button>
+									  </li>
+									  <li class="product-categories__item clinical" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="clinical-tab" data-bs-toggle="tab" data-bs-target="#clinical" type="button" role="tab" aria-controls="clinical" aria-selected="false">Клинические</button>
+									  </li>
+									  <li class="product-categories__item organoleptic" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="organoleptic-tab" data-bs-toggle="tab" data-bs-target="#organoleptic" type="button" role="tab" aria-controls="organoleptic" aria-selected="false">Органолептические</button>
+									  </li>
+									  <li class="product-categories__item comprehensive" role="presentation" data-bs-dismiss="offcanvas">
+									    <button id="comprehensive-tab" data-bs-toggle="tab" data-bs-target="#comprehensive" type="button" role="tab" aria-controls="comprehensive" aria-selected="false">Комплексные</button>
+									  </li>
+									</ul>
+						      	</div>
+						    </div>
+
+					</div>
+					<div class="main-contentainer__content">
+						<div class="content__tabs" id="categoriesContent">
+
+							<!-- categories content -->
+							<div class="tab-content">
+
+							  <div class="tab-pane active" id="microbiological" role="tabpanel" aria-labelledby="microbiological-tab" tabindex="0">
+							  	<h2 class="category__title">Микробиологические испытания</h2>
+							  	<a href="pr-testing__microbiological.html" class="title-link">Подробнее</a>
+									<div class="category__text">
+										<p>Проверка образцов по микробиологическим показателям, включая золотистый стафилококк, кишечную и синегнойную палочку, дрожжи вида Candida и прочее.</p>
+									</div>	
+									<div class="category__table">
+
+										<div class="table__line table--header">
+											<div class="category__object">
+												<span>Объект исследования</span>
+											</div>
+											<div class="category__values">
+												<span>Показатели проверки</span>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Парфюмерно-косметическая продукция</a></p>
+												<p><a href="#">Средства индивидуальной защиты дерматологические</a></p>
+												<p><a href="#">Средства гигиены полости рта</a></p>
+												<p><a href="pr-testing__toothpaste.html">Зубные пасты</a></p>
+												<p><a href="#">Зубные порошки</a></p>
+											</div>
+											<div class="category__values">
+												<div class="category__content">
+													<div class="values__list">
+														<p class="table--header">Показатели проверки</p>
+														<p>КМАМ/КМАФАнМ</p>
+														<p>Дрожжи и плесневые грибы</p>
+														<p>Candida albicans</p>
+														<p>Enterobacteriaceae</p>
+														<p>Pseudomonas aeruginosa</p>
+														<p>Staphylococcus aureus</p>
+														<p>Escherichia coli</p>
+														<p>Исследования на стерильность</p>
+														<p>Оценка антимикробной защиты</p>
+														<p>Антимикробная активность</p>
+													</div>
+												</div>
+												<button class="show-all">Смотреть все</button>
+											</div>	
+										</div>
+
+									</div>
+							  </div>
+
+							  <div class="tab-pane" id="physicochemical" role="tabpanel" aria-labelledby="physicochemical-tab" tabindex="0">
+							  	<h2 class="category__title">Физико-химические испытания</h2>
+							  	<a href="#" class="title-link">Подробнее</a>
+									<div class="category__text">
+										<p>Проверка различных видов продукции по десяткам показателей на соответствие требованиям ГОСТов.</p>
+									</div>	
+									<div class="category__table">
+
+										<div class="table__line table--header">
+											<div class="category__object">
+												<span>Объект исследования</span>
+											</div>
+											<div class="category__values">
+												<span>Показатели проверки</span>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Парфюмерно-косметическая продукция</a></p>
+												<p><a href="pr-testing__toothpaste.html">Зубные пасты</a></p>
+												<p><a href="#">Зубные порошки</a></p>
+												<p><a href="#">Средства гигиены полости рта</a></p>
+											</div>
+											<div class="category__values">
+												<div class="category__content">
+													<div class="values__list">
+														<p class="table--header">Показатели проверки</p>
+														<p>органолептические показатели</p>
+														<p>наличие солей тяжелых металлов (мышьяк, свинец, ртуть)</p>
+														<p>pH</p>
+														<p>коллоидная стабильность</p>
+														<p>термостабильность</p>
+														<p>массовая доля воды и летучих веществ</p>
+														<p>кроющая способность</p>
+														<p>массовая доля хлоридов / хлора</p>
+														<p>определение фторидов</p>
+														<p>карбонильное число</p>
+														<p>кислотное число</p>
+														<p>пенообразующая способность</p>
+														<p>массовая доля тиоловых соединений</p>
+														<p>степень компактности</p>
+														<p>температура каплепадения</p>
+														<p>массовая доля общей золы</p>
+														<p>колористическая оценка</p>
+														<p>массовая доля этилового спирта</p>
+													</div>
+												</div>
+												<button class="show-all">Смотреть все</button>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Средства индивидуальной защиты дерматологические</a></p>
+											</div>
+											<div class="category__values">
+												<div class="category__content">
+													<div class="values__list">
+														<p class="table--header">Показатели проверки</p>
+														<p>органолептические показатели</p>
+														<p>pH</p>
+														<p>устойчивость к пониженным температурам(соответствие органолептических и физикохимических свойств после нескольких циклов замораживания / размораживания)</p>
+														<p>коллоидная стабильность, термостабильность</p>
+														<p>температура каплепадения</p>
+														<p>направленная эффективность(очищающая способность)</p>
+														<p>наличие солей тяжелых металлов(мышьяк, свинец, ртуть)</p>
+													</div>
+												</div>
+												<button class="show-all">Смотреть все</button>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Эфирные масла</a></p>
+											</div>
+											<div class="category__values">
+												<div class="category__content">
+													<div class="values__list">
+														<p class="table--header">Показатели проверки</p>
+														<p><a href="#">органолептические показатели</a></p>
+														<p><a href="#">относительная плотность</a></p>
+														<p><a href="#">растворимость в этиловом спирте</a></p>
+														<p><a href="#">показатель преломления</a></p>
+														<p><a href="#">эфирное число / массовая доля эфиров</a></p>
+														<p><a href="#">кислотное число</a></p>
+														<p><a href="#">карбонильное число</a></p>
+													</div>
+												</div>
+												<button class="show-all">Смотреть все</button>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Товары бытовой химии</a></p>
+												<p><a href="#">Средства для стирки</a></p>
+											</div>
+											<div class="category__values">
+												<div class="category__content">
+													<div class="values__list">
+														<p class="table--header">Показатели проверки</p>
+														<p>массовая доля активного кислорода</p>
+														<p>массовая доля активного хлора</p>
+														<p>массовая доля щелочных компонентов</p>
+														<p>массовая доля фосфорнокислых солей</p>
+														<p>pH</p>
+														<p>пенообразующая способность</p>
+													</div>
+												</div>
+												<button class="show-all">Смотреть все</button>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Продукция в аэрозольной упаковке</a></p>
+											</div>
+											<div class="category__values">
+												<div class="category__content">
+													<div class="values__list">
+														<p class="table--header">Показатели проверки</p>
+														<p>прочность и герметичность аэрозольной упаковки</p>
+														<p>работоспособность клапана</p>
+														<p>избыточное давление в аэрозольной упаковке при 20°С</p>
+														<p>степень эвакуации содержимого из аэрозольной упаковки</p>
+														<p>пенное число / устойчивость пены</p>
+													</div>
+												</div>
+												<button class="show-all">Смотреть все</button>
+											</div>	
+										</div>
+
+									</div>
+							  </div>
+
+							  <div class="tab-pane" id="toxicological" role="tabpanel" aria-labelledby="toxicological-tab" tabindex="0">
+							  	<h2 class="category__title">Токсикологические испытания</h2>
+							  	<a href="#" class="title-link">Подробнее</a>
+									<div class="category__text">
+										<p>Токсикологические испытания проводят с целью определения индекса токсичности и степени токсичности продукции. Общетоксическое действие определяется альтернативными методами in vitro, без использования животных.</p>
+									</div>	
+									<div class="category__table">
+
+										<div class="table__line table--header">
+											<div class="category__object">
+												<span>Объект исследования</span>
+											</div>
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Парфюмерно-косметическая продукция</a></p>
+												<p><a href="#">Средства индивидуальной защиты дерматологические</a></p>
+											</div>
+										</div>
+
+									</div>
+							  </div>
+
+							  <div class="tab-pane" id="clinical" role="tabpanel" aria-labelledby="clinical-tab" tabindex="0">
+							  	<h2 class="category__title">Клинические испытания</h2>
+							  	<a href="#" class="title-link">Подробнее</a>
+									<div class="category__text">
+										<p>Испытания проводятся под руководством сертифицированных врачей-дерматологов, дающих заключение о раздражающем и сенсибилизирующем действии продукции путем исследования на добровольцах.</p>
+									</div>		
+									<div class="category__table">
+
+										<div class="table__line table--header">
+											<div class="category__object">
+												<span>Объект исследования</span>
+											</div>
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Парфюмерно-косметическая продукция</a></p>
+												<p><a href="#">Средства индивидуальной защиты дерматологические</a></p>
+											</div>
+										</div>
+
+									</div>
+							  </div>
+
+							  <div class="tab-pane" id="organoleptic" role="tabpanel" aria-labelledby="organoleptic-tab" tabindex="0">
+							  	<h2 class="category__title">Органолептические испытания</h2>
+							  	<a href="#" class="title-link">Подробнее</a>
+									<div class="category__text">
+										<p>Целью органолептического исследования является описание продукции на основе ее сенсорных характеристик, а также отличия от другого сходного продукта. В этом виде испытаний исполнитель выступает в качестве эксперта и потребителя, определяя характеристики товара in vitro и in vivo.</p>
+									</div>
+									<div class="category__table">
+
+										<div class="table__line table--header">
+											<div class="category__object">
+												<span>Объект исследования</span>
+											</div>
+											<div class="category__values">
+												<span>Сенсорный анализ</span>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Парфюмерно-косметическая продукция</a></p>
+												<p><a href="pr-testing__toothpaste.html">Зубные пасты</a></p>
+												<p><a href="#">Зубные порошки</a></p>
+												<p><a href="#">Средства гигиены полости рта</a></p>
+												<p><a href="#">Средства индивидуальной защиты дерматологические</a></p>
+												<p><a href="#">Эфирные масла</a></p>
+											</div>
+											<div class="category__values">
+												<div class="category__content">
+													<div class="values__list">
+														<p class="table--header">Сенсорный анализ</p>
+														<p>Внешний вид</p>
+														<p>Цвет</p>
+														<p>Запах</p>
+														<p>Вкус</p>
+														<p>Однородность</p>
+													</div>
+												</div>
+											</div>		
+										</div>
+
+									</div>
+							  </div>
+
+							  <div class="tab-pane" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab" tabindex="0">
+							  	<h2 class="category__title">Комплексные испытания</h2>
+							  	<a href="#" class="title-link">Подробнее</a>
+									<div class="category__text">
+										<p>Проводим испытания на соответствие требований Технических регламентов таможенного союза ТР ТС 009 и 019, а также межгосударственных и национальных стандартов с целью оценки качества и безопасности продукции.</p>
+									</div>	
+									<div class="category__table">
+
+										<div class="table__line table--header">
+											<div class="category__object">
+												<span>Объект исследования</span>
+											</div>
+											<div class="category__values">
+												<span>Виды исследований</span>
+											</div>	
+										</div>
+
+										<div class="table__line">
+											<div class="category__object">
+												<p class="table--header">Объект исследования</p>
+												<p><a href="#">Парфюмерно-косметическая продукция</a></p>
+												<p><a href="#">Средства гигиены полости рта</a></p>
+												<p><a href="#">Средства индивидуальной защиты дерматологические</a></p>
+												<p><a href="#">Эфирные масла</a></p>
+												<p><a href="#">Средства для стирки</a></p>
+											</div>
+											<div class="category__values">
+												<div class="values__list">
+													<p class="table--header">Виды исследований</p>
+													<p>микробиологические испытания</p>
+													<p>pH</p>
+													<p>токсикологические испытания</p>
+													<p>клинические испытания</p>
+													<p>токсичные элементы</p>
+												</div>
+											</div>	
+										</div>
+
+									</div>
+							  </div>
+
+							</div>						
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="page-content__block container-fluid">
+			<div class="row">
+				<div class="section-title col-12">
+					<h2>Производственный контроль</h2>
+					<p class="block__text">Испытательный лабораторный центр «ИСТЭК-ЛАБ» в рамках программ производственного контроля предприятий по производству парфюмерно-косметической продукции, средств индивидуальной защиты дерматологических проводит:</p>
+					<ul class="block__list">
+						<li>Испытания сырья и готовой продукции с целью подтверждения заявленных потребительских свойств продукции.</li>
+						<li>Смывы с объектов производственного оборудования, инвентаря, рук, спецодежды персонала на санитарно-показательную микрофлору.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-content__c-form container-fluid">
+			<div class="row">
+				<div class="c-form-text col">
+					<h2>Остались вопросы?</h2>
+					<p>Если у вас есть вопросы по лабораторным испытаниям продукции, стоимости или по срокам проведения исследований, оставьте свои контактные данные — наш менеджер свяжется с вами в течение 10 минут.</p>
+				</div>
+				<div class="col">
+					<form class="request-form">
+						<div class="request-form__inside">
+							<div class="mb-3"><h2>Остались вопросы?</h2></div>
+						  <div class="mb-3">
+								<input type="text" class="form__input form-control" placeholder="Имя" aria-label="Имя">
+							</div>
+						    <div class="mb-3">
+								<input type="text" class="form__input form-control phone--input" placeholder="Телефон" aria-label="Телефон">
+							</div>
+						    <button class="btn-call btn-primary" type="button">Заказать звонок</button>
+						    <label>Нажимая кнопку «Заказать звонок», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
+						</div>
+	      				<div class="request-form__result success-text">
+	      					<p class="success__title">Спасибо за обращение!</p>
+	      				</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-content__licenses container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<h2>Лицензии и&nbsp;сертификаты</h2>
+					<div class="licenses__text">
+						<p>Независимый испытательный лабораторный центр «ИСТЭК-ЛАБ» аккредитован на проведение комплексных испытаний для косметики, парфюмерии и средств индивидуальной защиты дерматологических.
+						</p>
+						<p>Мы <b>аккредитованы</b> Федеральной Службой по Аккредитации и внесены в национальную часть единого реестра.  </p>
+						<a href="" class="licenses__photo" data-bs-toggle="modal" data-bs-target="#exampleModalLisence" data-lg="images/licenses/license-1-lg.jpg">
+							<img src="images/licenses/license-1.png"class="img-fluid">
+							<span class="open__photo"></span>
+						</a>
+						<p>Лаборатория имеет <b>Лицензию</b> на работу с микроорганизмами 3–4 групп патогенности.</p>
+						<a href="" class="licenses__photo photo-2" data-bs-toggle="modal" data-bs-target="#exampleModalLisence" data-lg="images/licenses/license-2-lg.jpg">
+							<img src="images/licenses/license-2.png"class="img-fluid">
+							<span class="open__photo"></span>
+						</a>
+						<p>По результатам подтверждения компетентности в 2022 году мы <br>признаны одной из лучших лабораторий в своей области.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    </main>
+
+    <footer class="container-fluid">
+
+    	<div class="footer">
+
+				<a href="/" class="footer__logo l-logo l-logo__footer d-flex align-items-center text-dark text-decoration-none">
+			      	<span class="logo-img"></span>
+					<span class="logo-text">
+						ИСТЭК-ЛАБ
+						<small>Испытательный лабораторный центр</small>
+					</span> 
+		    </a>
+				
+				<div class="footer__addressone">
+					<!-- <h3>ИЛЦ ИСТЭК-ЛАБ</h3> -->
+					<ul class="footer__contacts nav">
+						<li class="contacts-item"><span class="contacts__location"></span>140121, Московская область, Раменский район, город Раменское, рабочий поселок Ильинский, ул. Пролетарская, дом 49, этаж 3, комната 185.</li>
+						<li class="contacts-item"><span class="contacts__time"></span>пн-пт с 8:30 до 17:00</li>
+						<li class="contacts-item"><span class="contacts__phone"></span>+7 (495) 128-88-21</li>
+						<li class="contacts-item"><span class="contacts__mail"></span>info@istek-lab.ru</li>
+					</ul>
+				</div>
+		
+				<ul class="footer__menu--new footer__menu__links nav">
+		      <li class="nav-item"><a href="#" class="nav-link">Область аккредитации</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link">Испытания продукции</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+		    </ul>
+		
+				<ul class="footer__social social__networks__icons nav">
+		      <li class="icon-item"><a href="#" class="nav-link"><img src="images/footer-icons/footer-icon-1.svg" alt=""></a></li>
+		      <li class="icon-item"><a href="#" class="nav-link"><img src="images/footer-icons/footer-icon-2.svg" alt=""></a></li>
+		      <li class="icon-item"><a href="#" class="nav-link"><img src="images/footer-icons/footer-icon-3.svg" alt=""></a></li>
+		  	</ul>
+			
+				<div class="footer__copyright">© 2021–2022 ИСТЭК-ЛАБ.  Все права защищены.  <a href="#">Карта сайта</a> | <a href="#">Политика конфиденциальности</a></div>
+
+			</div>
+ 		</footer>
+
+	<!-- Modals -->
+	<div class="license__modal modal fade" id="exampleModalLisence" tabindex="-1" aria-labelledby="exampleModalLisenceLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="license__img">
+	      		<img src="" alt="" id="licenseImg">
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="tabs__modal modal fade" id="modalTabs" tabindex="-1" aria-labelledby="modalTabsLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+		    <div class="modal-header">
+		      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		    </div>
+	      <div class="modal-body">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="call__modal modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title" id="exampleModalLabel">Оформление заявки</h2>
+	        <p>Оставьте ваши контактные данные, и наш менеджер свяжется с вами в течение 10 минут.</p>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form class="request-form">
+				<div class="request-form__inside">
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control required--input" placeholder="Имя*" aria-label="Имя">
+					</div>
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control phone--input required--input" placeholder="Телефон*" aria-label="Телефон">
+					</div>
+				    <div class="mb-3">
+						<input type="text" class="form__input form-control" placeholder="Email" aria-label="Email">
+					</div>
+				    <button class="btn-call btn-primary" type="button">Отправить заявку</button>
+				    <label>Нажимая кнопку «Отправить заявку», вы принимаете условия <a href="#">пользовательского соглашения</a></label>
+				</div>
+			</form>
+	      </div>
+	      <div class="request-form__result success-text">
+					<p class="success__title">Спасибо за заявку!</p>
+					<p class="success__text">Наш менеджер перезвонит вам в&nbsp;течение 10 минут.</p>
+				</div>
+	    </div>
+	  </div>
+	</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src='js/validator.min.js'></script> 
+		<script src="js/scroller.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+
+    <script src="js/main.js"></script> <!-- main js file -->
+
+  </body>
+</html>

@@ -225,6 +225,10 @@ section p b{
 	position: relative;
 }
 
+.request-form__inside h2{
+	display: none;
+}
+
 .form__input.form-control{
 	width: 100%;
 	min-height: 50px;
@@ -1562,6 +1566,11 @@ header .btn-call.btn-mobile{
 .request-form input:focus-visible{
 	border: 1px solid #68CCF3;
 	outline: 0;
+}
+
+.request-form input[type="submit"]:hover,
+.request-form input[type="submit"]:focus-visible{
+	border: 0px solid #68CCF3;
 }
 
 .request-form input::-webkit-input-placeholder {
@@ -3113,6 +3122,10 @@ ul.footer__menu--new li:nth-child(7){
 	    background: url(../images/toogler-dark.svg) center right no-repeat;
 	}
 
+	header.dark-header .toogler__btn{	
+		background: url(../images/toogler.svg) center right no-repeat;
+	}
+
 	header.fixed .btn-call ,
 	header.fixed .btn--request {
 	    background: url(../images/el_phone-dark.svg) right center no-repeat;
@@ -3383,9 +3396,14 @@ ul.footer__menu--new li:nth-child(7){
 	}
 
 	section p,
-	.page-content__banner .card p{
+	.page-content__banner .card p,
+	.detail__content ul li{
 	    font-size: 16px;
 	    line-height: 24px;
+	}
+
+	div.detail__text ul li:before {
+	    top: 9px;
 	}
 
 	.card-link:after {
@@ -3875,11 +3893,16 @@ ul.footer__menu--new li:nth-child(7){
 @media (max-width: 991px){	
 
 	header .btn-call{
-		display: none;
+/*		display: none;*/
 	}
 
 	header .btn-call.btn-mobile{
 		display: inline-block;
+	}
+
+	header.dark-header{
+		background: #5F7187;
+		box-shadow: none;
 	}
 
 	.panel__contacts-item:nth-child(2){
@@ -4060,11 +4083,26 @@ ul.footer__menu--new li:nth-child(7){
 		background-size: contain;
 	}
 
+	header.dark-header .l-logo span.logo-img{
+		background: url(../images/logo.svg) -7px -3px no-repeat;
+		background-size: contain;
+		height: 50px;
+		width: 38px;
+	}
+
+	header.dark-header .btn-call{ 
+		background: url(../images/el_phone.svg) right center no-repeat;
+	}
+
 	header.fixed .l-logo span.logo-text {
 	    display: block;
 	    color: #607187;
 	    margin-left: -19px;
 	    margin-top: 2px;
+	}
+
+	header.dark-header .l-logo span.logo-text{
+		color: #fff;
 	}
 
 	.header__menu__links li.active-item{
@@ -4559,12 +4597,24 @@ ul.footer__menu--new li:nth-child(7){
 		background: url(../images/close-menu-dark.svg) center right no-repeat;
 	}
 
+	header.dark-header .btn-block button.categories__popup__close{
+		background: url(../images/close-menu.svg) center right no-repeat;
+	}
+
 	.header__menu.offcanvas-lg.offcanvas-end {
 	    max-width: 307px;
 	}
 
 	header.fixed .header__menu.offcanvas-lg.offcanvas-end.show + .btn-block .toogler__btn {
 	    background: url(../images/close-menu-dark.svg) center right no-repeat;
+	}
+
+	header.dark-header .header__menu.offcanvas-lg.offcanvas-end.show + .btn-block .toogler__btn{
+		background: url(../images/close-menu.svg) center right no-repeat;
+	}
+
+	header.dark-header .btn-call{ 
+		background: url(../images/el_phone.svg) right center no-repeat;
 	}
 
 	.offcanvas-body {
@@ -5253,6 +5303,11 @@ ul.footer__menu--new li:nth-child(7){
 	.page-content__c-form h2 {
 	    margin-bottom: 26px;
 	    text-align: left;
+	    display: none;
+	}
+
+	.page-content__c-form .request-form h2{
+		display: block;
 	}
 	
 	.page-content__c-form h2 + p{

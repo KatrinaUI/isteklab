@@ -34,12 +34,21 @@
 
 .accordion-header button:focus,
 .accordion-header button:active,
-.accordion-item:first-of-type button.accordion-button, .accordion-button{
+.accordion-item:first-of-type button.accordion-button, .accordion-button,
+.accordion-button:not(.collapsed){
 	outline: 0;
     border: 0;
     box-shadow: none;
     background: no-repeat;
     color: #000000;
+}
+
+.accordion-item .accordion-header{
+	border: 0;
+}
+
+.accordion-header .accordion-button:focus{
+	border: 0;
 }
 
 .accordion-body{
@@ -104,6 +113,7 @@ section.page-content__c-form{
 
 	section.page-content__c-form .request-form.success-request {
 	    padding-top: 118px;
+	    background-size: contain;
 	}
 
 	.section-accordion{
