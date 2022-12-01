@@ -170,6 +170,10 @@ section.page-content__banner.top-baner>.row{
 	line-height: 38px;
 }
 
+.bg--blue.page-content__c-form .mb-3 h2{
+	display: none;
+}
+
 .bg--blue.page-content__c-form{
 	background: #EEFAFF;
 	border: 0;
