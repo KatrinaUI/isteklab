@@ -3818,6 +3818,10 @@ ul.footer__menu--new li:nth-child(7){
 	.footer__contacts.nav li{
 		color: #fff;
 	}
+
+	.footer__contacts.nav li:nth-child(3){
+		color: red!important;
+	}
 }
 
 @media (max-width: 1160px){
