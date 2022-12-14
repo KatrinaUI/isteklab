@@ -3814,6 +3814,10 @@ ul.footer__menu--new li:nth-child(7){
 	.page-content__banner>.row{
 		padding-bottom: 0;
 	}
+
+	.footer__contacts.nav li{
+		color: #fff;
+	}
 }
 
 @media (max-width: 1160px){
