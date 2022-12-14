@@ -4498,6 +4498,10 @@ ul.footer__menu--new li:nth-child(7){
 	.footer__contacts.nav li{
 		color: #fff;
 	}
+
+	.footer__contacts.nav li span{
+		top: -1px;
+	}
 }
 
 @media (max-width: 767px) and (min-width: 360px){
