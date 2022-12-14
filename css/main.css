@@ -2456,10 +2456,15 @@ footer{
 	padding-left: 0;
 }
 
+ul.footer__contacts li{
+	color: #fff;
+}
+
 .footer__addressone ul li span,
 .footer__addresstwo ul li span {
     position: absolute;
     left: 0;
+    top: -1px;
     content: '';
     width: 16px;
     height: 20px;
